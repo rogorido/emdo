@@ -7,7 +7,14 @@
           Gobierno global, geopolítica y costes en la Orden de Predicadores
           (1570-1700)
         </h3>
-        <q-btn class="primary" label="More info"></q-btn>
+        <q-btn
+          unelevated
+          rounded
+          class="q-pa-md"
+          color="primary"
+          label="More info"
+          to="/about"
+        ></q-btn>
       </div>
     </div>
     <div class="intro">
