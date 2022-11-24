@@ -29,6 +29,12 @@ export const linksList = [
     icon: "chat",
     link: "/houses",
   },
+  {
+    title: "Contact",
+    caption: "Infrastructure of the Order",
+    icon: "chat",
+    link: "/contact",
+  },
 ];
 
 export const sections = [
