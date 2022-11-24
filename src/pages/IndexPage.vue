@@ -1,22 +1,19 @@
 <template>
-  <q-page class="container">
-    <div class="row">
-      <div class="col-10">
-        <h2>Early Modern Order's Preacher</h2>
-        <h3>
-          Gobierno global, geopolítica y costes en la Orden de Predicadores
-          (1570-1700)
-        </h3>
-        <q-btn
-          unelevated
-          rounded
-          class="q-pa-md"
-          color="primary"
-          label="More info"
-          to="/about"
-        ></q-btn>
-      </div>
-    </div>
+  <q-page>
+    <h2>Early Modern Order's Preacher</h2>
+    <h3>
+      Gobierno global, geopolítica y costes en la Orden de Predicadores
+      (1570-1700)
+    </h3>
+    <q-btn
+      unelevated
+      rounded
+      class="q-pa-md"
+      color="primary"
+      label="More info"
+      to="/about"
+    ></q-btn>
+
     <div class="intro">
       <p>
         Estas páginas están dedicadas al proyecto de investigación
@@ -48,7 +45,7 @@
 </template>
 
 <script setup>
-import { sections } from "../assets/links";
+import { sections } from '../assets/links';
 </script>
 
 <style scoped>

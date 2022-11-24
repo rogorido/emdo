@@ -10,6 +10,7 @@
             :key="link.title"
             :label="link.title"
             :to="link.link"
+            class="menuitem"
           ></q-btn
         ></q-list>
         <q-btn
@@ -37,7 +38,15 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <div class="row">
+        <div :class="`col-md-2 ${$q.screen.lt.md ? 'hidden' : ''}`">
+          <p class="cojones">Igor Sosa Mayor</p>
+        </div>
+        <div class="col-md-8">
+          <router-view />
+        </div>
+        <div class="col-md-2"><h1>right</h1></div>
+      </div>
     </q-page-container>
 
     <q-footer>
@@ -49,15 +58,15 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
-import { linksList } from "../assets/links";
+import { defineComponent, ref } from 'vue';
+import EssentialLink from 'components/EssentialLink.vue';
+import { linksList } from '../assets/links';
 
 export default defineComponent({
-  name: "MainLayout",
+  name: 'MainLayout',
 
   components: {
-    EssentialLink,
+    EssentialLink
   },
 
   setup() {
@@ -68,8 +77,16 @@ export default defineComponent({
       leftDrawerOpen,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
-      },
+      }
     };
-  },
+  }
 });
 </script>
+
+<style lang="scss" scoped>
+.menuitem {
+  font-size: 100%;
+  font-weight: 700;
+  letter-spacing: 0.0933em;
+}
+</style>
