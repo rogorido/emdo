@@ -2,6 +2,16 @@
   <q-layout view="lHh Lpr lFf">
     <q-header>
       <q-toolbar>
+        <q-toolbar-title>Preacher's Order </q-toolbar-title>
+        <q-list class="gt-sm"
+          ><q-btn
+            flat
+            v-for="link in essentialLinks"
+            :key="link.title"
+            :label="link.title"
+            :to="link.link"
+          ></q-btn
+        ></q-list>
         <q-btn
           flat
           dense
@@ -9,9 +19,8 @@
           icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
+          class="lt-md"
         />
-
-        <q-toolbar-title>Preacher's Order </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
