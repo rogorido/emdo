@@ -1,36 +1,34 @@
 <template>
-  <q-page>
-    <h3>
-      Most comprehensive webpage devoted to the Dominican Order in the early
-      modern period.
-    </h3>
-    <q-btn
-      unelevated
-      rounded
-      class="q-pa-md"
-      color="primary"
-      label="More info"
-      to="/about"
-    ></q-btn>
+  <h3 class="suave">
+    <em
+      >The most comprehensive webpage devoted to the Dominican Order in the
+      early modern period.</em
+    >
+  </h3>
+  <q-btn
+    unelevated
+    rounded
+    class="q-pa-md"
+    color="primary"
+    label="More info"
+    to="/about"
+  ></q-btn>
 
-    <div class="intro">
-      <p>
-        Estas páginas están dedicadas al proyecto de investigación
-        <em>
-          Globalización religiosa como reto. Gobierno global, geopolítica y
-          costes en la Orden de Predicadores (1570-1700)
-        </em>
-        , dirigido por
-        <router-link class="textlinks" to="/contact"
-          >Igor Sosa Mayor</router-link
-        >
-        y financiado por el
-        <a class="textlinks" href="#">Ministerio de Ciencia</a>
-        e Innovación de España.
-      </p>
-    </div>
-    <OurSections />
-  </q-page>
+  <div class="intro">
+    <p>
+      Estas páginas están dedicadas al proyecto de investigación
+      <em>
+        Globalización religiosa como reto. Gobierno global, geopolítica y costes
+        en la Orden de Predicadores (1570-1700)
+      </em>
+      , dirigido por
+      <router-link class="textlinks" to="/contact">Igor Sosa Mayor</router-link>
+      y financiado por el
+      <a class="textlinks" href="#">Ministerio de Ciencia</a>
+      e Innovación de España.
+    </p>
+  </div>
+  <OurSections />
 </template>
 
 <script setup>
@@ -67,7 +65,7 @@ import OurSections from 'components/homepage/OurSections.vue';
   }
 }
 
-.leches {
-  display: flex;
+.suave {
+  opacity: 0.7;
 }
 </style>
