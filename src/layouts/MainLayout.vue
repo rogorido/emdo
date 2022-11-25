@@ -17,11 +17,11 @@
           flat
           dense
           round
-          icon="menu"
           aria-label="Menu"
           @click="toggleLeftDrawer"
           class="lt-md"
-        />
+          ><i class="fa-solid fa-bars"></i
+        ></q-btn>
       </q-toolbar>
     </q-header>
 
@@ -40,7 +40,7 @@
     <q-page-container>
       <div class="row">
         <div :class="`col-md-2 ${$q.screen.lt.md ? 'hidden' : ''}`">
-          <p class="cojones">Igor Sosa Mayor</p>
+          <LeftColumn />
         </div>
         <div class="col-md-8">
           <router-view />
@@ -49,9 +49,10 @@
       </div>
     </q-page-container>
 
-    <q-footer>
+    <q-footer class="q-mt-md">
       <q-toolbar>
-        <q-toolbar-title>Made with Quasar</q-toolbar-title>
+        <!-- <q-toolbar-title>Made with Quasar</q-toolbar-title> -->
+        Made with Quasar
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -61,12 +62,14 @@
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
 import { linksList } from '../assets/links';
+import LeftColumn from 'components/LeftColumn.vue';
 
 export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+    EssentialLink,
+    LeftColumn
   },
 
   setup() {
