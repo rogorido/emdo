@@ -1,9 +1,9 @@
 <template>
   <q-page>
-    <h2>Early Modern Order's Preacher</h2>
+    <h2>Early Modern Dominican Order</h2>
     <h3>
-      Gobierno global, geopolítica y costes en la Orden de Predicadores
-      (1570-1700)
+      Most comprehensive webpage devoted to the Dominican Order in the early
+      modern period.
     </h3>
     <q-btn
       unelevated
@@ -21,39 +21,54 @@
           Globalización religiosa como reto. Gobierno global, geopolítica y
           costes en la Orden de Predicadores (1570-1700)
         </em>
-        , dirigido por Igor Sosa Mayor y financiado por el Ministerio de Ciencia
+        , dirigido por
+        <router-link class="textlinks" to="/contact"
+          >Igor Sosa Mayor</router-link
+        >
+        y financiado por el
+        <a class="textlinks" href="#">Ministerio de Ciencia</a>
         e Innovación de España.
       </p>
     </div>
-
-    <div class="row">
-      <h3>Our sections</h3>
-    </div>
-    <div class="row q-gutter-sm">
-      <div class="col-3" v-for="section in sections" :key="section.id">
-        <q-card v-ripple>
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg" />
-          <q-card-section>
-            <div class="text-h4">{{ section.titulo }}</div>
-          </q-card-section>
-
-          <q-card-section>{{ section.texto }} </q-card-section>
-        </q-card>
-      </div>
-    </div>
+    <OurSections />
   </q-page>
 </template>
 
 <script setup>
-import { sections } from '../assets/links';
+import OurSections from 'components/homepage/OurSections.vue';
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .intro p {
   font-size: 1.5rem;
 }
 
-a {
+.textlinks {
+  background-color: transparent;
+  color: inherit;
   text-decoration: none;
+  overflow-wrap: break-word;
+  word-break: normal;
+  word-wrap: break-word;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    $link-hover-color 100%,
+    transparent 100%
+  );
+  background-position: 0 1.2em;
+  background-repeat: repeat-x;
+  background-size: 2px 4px;
+  //transition: background-color 0.5s, background-image 0.5s;
+
+  &:hover {
+    background-color: $link-hover-color;
+    background-image: none;
+    color: $white;
+  }
+}
+
+.leches {
+  display: flex;
 }
 </style>
