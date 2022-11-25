@@ -1,6 +1,5 @@
 <template>
   <q-page>
-    <h2>Early Modern Dominican Order</h2>
     <h3>
       Most comprehensive webpage devoted to the Dominican Order in the early
       modern period.
