@@ -5,14 +5,6 @@
       early modern period.</em
     >
   </h3>
-  <q-btn
-    unelevated
-    rounded
-    class="q-pa-md"
-    color="primary"
-    label="More info"
-    to="/about"
-  ></q-btn>
 
   <div class="intro">
     <p>

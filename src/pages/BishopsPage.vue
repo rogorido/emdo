@@ -1,21 +1,3 @@
 <template>
-  <q-page>
-    <h2>Early Modern Order's Preacher</h2>
-    <h3>
-      Gobierno global, geopolítica y costes en la Orden de Predicadores
-      (1570-1700)
-    </h3>
-    <q-btn class="primary" label="More info"></q-btn>
-    <div class="intro">
-      <p>
-        Estas páginas están dedicadas al proyecto de investigación
-        <em>
-          Globalización religiosa como reto. Gobierno global, geopolítica y
-          costes en la Orden de Predicadores (1570-1700)
-        </em>
-        , dirigido por Igor Sosa Mayor y financiado por el Ministerio de Ciencia
-        e Innovación de España.
-      </p>
-    </div>
-  </q-page>
+  <h3>Bishops</h3>
 </template>
