@@ -1,29 +1,28 @@
 <template>
-  <div class="row">
-    <h3>Our sections</h3>
-  </div>
-  <div class="row q-gutter-md">
-    <div class="col-3" v-for="section in sections" :key="section.id">
-      <q-card
-        v-ripple
-        class="q-hoverable cursor-pointer"
-        @click="goToSite(section.link)"
-      >
+  <section class="probando">
+    <h4 class="text-center">Our sections</h4>
+
+    <div
+      class="row q-mb-lg oferta q-hoverable cursor-pointer"
+      v-for="section in sections"
+      :key="section.id"
+      @click="goToSite(section.link)"
+    >
+      <div class="col imageshown">
         <q-img
           :src="`images/${section.image}`"
           :alt="section.title"
           height="250px"
-          class="q-mb-md"
         ></q-img>
-
-        <div class="text-h4 text-center">
+      </div>
+      <div class="col descriptionshown">
+        <h5 class="q-mt-none q-mb-sm text-center text-uppercase">
           {{ section.titulo }}
-        </div>
-        <q-card-section>{{ section.texto }} </q-card-section>
-        <q-separator />
-      </q-card>
+        </h5>
+        <p>{{ section.texto }}</p>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup>
@@ -36,3 +35,28 @@ const goToSite = (site) => {
   router.push(site);
 };
 </script>
+
+<style lang="scss" scoped>
+@media (min-width: 701px) {
+  .oferta:nth-of-type(2n) {
+    .imageshown {
+      order: 2;
+    }
+    .descriptionshown {
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .oferta {
+    flex-direction: column;
+    .imageshown {
+      order: 1;
+    }
+    .descriptionshown {
+      order: 2;
+    }
+  }
+}
+</style>
