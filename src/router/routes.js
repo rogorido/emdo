@@ -10,6 +10,7 @@ const routes = [
         component: () => import('pages/ResolutionsPage.vue')
       },
       { path: '/houses', component: () => import('pages/HousesPage.vue') },
+      { path: '/works', component: () => import('pages/WorksPage.vue') },
       { path: '/about', component: () => import('pages/AboutPage.vue') },
       { path: '/contact', component: () => import('pages/ContactPage.vue') },
       { path: '/getdata', component: () => import('pages/GetDataPage.vue') }
