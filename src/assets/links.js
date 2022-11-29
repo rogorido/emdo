@@ -1,8 +1,8 @@
 export const linksList = [
   {
-    title: 'Home',
+    title: 'About',
     icon: 'school',
-    link: '/'
+    link: '/about'
   },
 
   {
