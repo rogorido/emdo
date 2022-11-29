@@ -46,13 +46,13 @@
           <h4><em>by</em> Igor Sosa Mayor</h4>
         </div>
         <div class="row">
-          <div :class="`col-md-2 ${$q.screen.lt.md ? 'hidden' : ''}`">
+          <div :class="`col-md-3 ${$q.screen.lt.md ? 'hidden' : ''}`">
             <LeftColumn />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-6">
             <router-view />
           </div>
-          <div class="col-md-2"><h1>right</h1></div>
+          <div class="col-md-3"></div>
         </div>
         <!-- place QPageScroller at end of page -->
         <q-page-scroller
@@ -113,7 +113,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .menuitem {
-  font-size: 100%;
+  font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.0933em;
 }
