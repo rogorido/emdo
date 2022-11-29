@@ -18,7 +18,7 @@
         <i class="fa-brands fa-github" />
       </a>
 
-      <a href="mailto:Igor.Sosa@eui.eu"
+      <a href="mailto:igor.sosa@georeligion.org"
         ><i class="fa-regular fa-envelope"></i>
       </a>
 
@@ -45,10 +45,11 @@
 .social {
   font-size: 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 a {
   color: $primary;
+  margin: 10px;
 }
 </style>
