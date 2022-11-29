@@ -49,14 +49,14 @@ export const sections = [
     titulo: 'Houses',
     texto: 'leches',
     link: '/houses',
-    image: 'holyland-circle.png'
+    image: 'holyland-circle.webp'
   },
   {
     id: 2,
     titulo: 'Bishops',
-    texto: 'hola',
+    texto: 'texto de bishops',
     link: '/bishops',
-    image: 'bishops.png'
+    image: 'bishops.webp'
   },
   {
     id: 3,
