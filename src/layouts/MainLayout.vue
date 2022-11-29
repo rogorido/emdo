@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="lhh Lpr lff">
+  <q-layout view="lHh Lpr lff">
     <q-header>
       <q-toolbar>
         <q-toolbar-title>Preacher's Order </q-toolbar-title>
@@ -23,9 +23,6 @@
           ><i class="fa-solid fa-bars"></i
         ></q-btn>
       </q-toolbar>
-      <div class="hero">
-        <h2>Early Modern Dominican Order</h2>
-      </div>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" bordered>
@@ -42,6 +39,12 @@
 
     <q-page-container>
       <q-page>
+        <div class="hero q-hoverable cursor-pointer" @click="goToHome()">
+          <h2>
+            <span style="color: #cc0d12">Early Modern</span> Dominican Order
+          </h2>
+          <h4><em>by</em> Igor Sosa Mayor</h4>
+        </div>
         <div class="row">
           <div :class="`col-md-2 ${$q.screen.lt.md ? 'hidden' : ''}`">
             <LeftColumn />
@@ -75,6 +78,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import EssentialLink from 'components/EssentialLink.vue';
 import { linksList } from '../assets/links';
 import LeftColumn from 'components/LeftColumn.vue';
@@ -89,10 +93,16 @@ export default defineComponent({
 
   setup() {
     const leftDrawerOpen = ref(false);
+    const router = useRouter();
+
+    const goToHome = () => {
+      router.push('/');
+    };
 
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
+      goToHome,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       }
@@ -114,7 +124,7 @@ export default defineComponent({
   /* color: $primary; */
   h2 {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -123,9 +133,14 @@ export default defineComponent({
     margin-bottom: 0px;
     color: black;
   }
-}
-
-q-page-container {
-  padding-top: 0px;
+  h4 {
+    padding-bottom: 100px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.0333em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+  }
 }
 </style>
