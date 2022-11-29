@@ -1,32 +1,34 @@
 <template>
-  <p class="ownname">Igor Sosa Mayor</p>
-  <div class="social">
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://twitter.com/rogorido"
-    >
-      <i class="fa-brands fa-twitter" />
-    </a>
+  <div class="q-pa-xl">
+    <p class="ownname">Igor Sosa Mayor</p>
+    <div class="social">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://twitter.com/rogorido"
+      >
+        <i class="fa-brands fa-twitter" />
+      </a>
 
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://github.com/rogorido"
-    >
-      <i class="fa-brands fa-github" />
-    </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/rogorido"
+      >
+        <i class="fa-brands fa-github" />
+      </a>
 
-    <a href="mailto:Igor.Sosa@eui.eu"
-      ><i class="fa-regular fa-envelope"></i>
-    </a>
+      <a href="mailto:Igor.Sosa@eui.eu"
+        ><i class="fa-regular fa-envelope"></i>
+      </a>
 
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
-      href="https://fedihum.org/@rogorido"
-      ><i class="fa-brands fa-mastodon"></i>
-    </a>
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://fedihum.org/@rogorido"
+        ><i class="fa-brands fa-mastodon"></i>
+      </a>
+    </div>
   </div>
 </template>
 
