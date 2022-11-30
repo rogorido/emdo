@@ -28,8 +28,10 @@ export default defineComponent({
 <style lang="scss" scoped>
 .hero {
   background-image: url('../assets/patron.svg');
+  /* background-image: url('../assets/nuevowave.svg'); */
 
   h2 {
+    font-size: clamp(21px, 3vw, 3vw);
     padding-top: 20vh;
     padding-bottom: 10px;
     font-weight: 900;
