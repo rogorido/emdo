@@ -19,8 +19,10 @@
           Houses
         </h5>
         <p>
-          Dominican houses are important feature of the Order. The question is
-          how many houses were present in the world.
+          La Orden de Predicadores llegará a tener unas 1200 casas repartidas a
+          lo largo y ancho del globo. Su presencia global será una de sus
+          características más relevantes. Pero su distribución fue muy desigual.
+          Nuestra cartografía es un intento de representar esa presencia global.
         </p>
       </div>
     </div>
