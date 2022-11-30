@@ -43,6 +43,7 @@ export default defineComponent({
     color: black;
   }
   h4 {
+    font-size: clamp(21px, 2vw, 2.2vw);
     padding-bottom: 20vh;
     font-weight: 500;
     text-align: center;

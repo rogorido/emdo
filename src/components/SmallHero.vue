@@ -30,6 +30,7 @@ export default defineComponent({
   background-image: url('../assets/patron.svg');
 
   h2 {
+    font-size: clamp(21px, 3vw, 3vw);
     padding-top: 5vh;
     padding-bottom: 10px;
     font-weight: 900;
@@ -41,6 +42,7 @@ export default defineComponent({
     color: black;
   }
   h4 {
+    font-size: clamp(21px, 2vw, 2.2vw);
     padding-bottom: 5vh;
     font-weight: 500;
     text-align: center;
