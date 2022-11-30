@@ -23,8 +23,16 @@ export default route(function (/* { store, ssrContext } */) {
     ? createWebHistory
     : createWebHashHistory;
 
+  // mirar aquí
+  // https://router.vuejs.org/guide/advanced/scroll-behavior.html
   const Router = createRouter({
-    scrollBehavior: () => ({ left: 0, top: 0 }),
+    scrollBehavior: (to, from, savedPosition) => {
+      if (savedPosition) {
+        return savedPosition;
+      } else {
+        return { top: 0 };
+      }
+    },
     routes,
 
     // Leave this as is and make changes in quasar.conf.js instead!
