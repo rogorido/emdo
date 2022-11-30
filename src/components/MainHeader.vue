@@ -1,7 +1,9 @@
 <template>
   <q-header>
     <q-toolbar class="text-primary bg-grey-1">
-      <q-toolbar-title>Preacher's Order </q-toolbar-title>
+      <q-toolbar-title class="q-hoverable cursor-pointer" @click="goToHome()"
+        >Preacher's Order
+      </q-toolbar-title>
       <q-list class="gt-sm"
         ><q-btn
           flat
@@ -39,6 +41,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { linksList } from '../assets/links';
 import EssentialLink from 'components/EssentialLink.vue';
 
@@ -51,9 +54,14 @@ export default defineComponent({
   setup() {
     const leftDrawerOpen = ref(false);
 
+    const router = useRouter();
+    const goToHome = () => {
+      router.push('/');
+    };
     return {
       linksList,
       leftDrawerOpen,
+      goToHome,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;
       }
