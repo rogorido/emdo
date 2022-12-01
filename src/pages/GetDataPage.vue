@@ -1,5 +1,5 @@
 <template>
-  <h3>Get the data</h3>
+  <h3 class="text-center">Get the data</h3>
 
   <p>
     El proyecto
