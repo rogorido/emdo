@@ -1,5 +1,8 @@
 <template>
   <div class="q-pa-xl">
+    <div class="flex flex-center">
+      <q-img src="~assets/svg/logo-emdo.svg" width="300px"></q-img>
+    </div>
     <p class="ownname">Igor Sosa Mayor</p>
     <div class="social">
       <a
@@ -46,6 +49,10 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
+}
+
+.probando {
+  margin: 0 auto;
 }
 
 a {
