@@ -1,7 +1,12 @@
 <template>
   <div class="q-pa-xl">
     <div class="flex flex-center">
-      <q-img src="~assets/svg/logo-emdo.svg" width="300px"></q-img>
+      <q-img
+        class="q-hoverable cursor-pointer"
+        @click="goToHome"
+        src="~assets/svg/logo-emdo.svg"
+        width="300px"
+      ></q-img>
     </div>
     <p class="ownname">Igor Sosa Mayor</p>
     <div class="social">
@@ -34,6 +39,26 @@
     </div>
   </div>
 </template>
+
+<script>
+import { defineComponent } from 'vue';
+import { useRouter } from 'vue-router';
+
+export default defineComponent({
+  name: 'LeftColumn',
+  setup() {
+    const router = useRouter();
+
+    const goToHome = () => {
+      router.push('/');
+    };
+
+    return {
+      goToHome
+    };
+  }
+});
+</script>
 
 <style lang="scss" scoped>
 .ownname {

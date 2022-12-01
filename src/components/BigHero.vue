@@ -32,7 +32,7 @@ export default defineComponent({
 
   h2 {
     font-size: clamp(21px, 3vw, 3vw);
-    padding-top: 20vh;
+    padding-top: 15vh;
     padding-bottom: 10px;
     font-weight: 900;
     text-align: center;
@@ -44,7 +44,7 @@ export default defineComponent({
   }
   h4 {
     font-size: clamp(21px, 2vw, 2.2vw);
-    padding-bottom: 20vh;
+    padding-bottom: 15vh;
     font-weight: 500;
     text-align: center;
     letter-spacing: 0.0333em;
