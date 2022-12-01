@@ -43,7 +43,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { linksList } from '../assets/links';
+import { linksList } from '../../assets/links';
 import EssentialLink from 'components/EssentialLink.vue';
 
 export default defineComponent({

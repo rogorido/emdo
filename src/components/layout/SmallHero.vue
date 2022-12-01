@@ -27,7 +27,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .hero {
-  background-image: url('../assets/svg/patron.svg');
+  background-image: url('../../assets/svg/patron.svg');
 
   h2 {
     font-size: clamp(21px, 3vw, 3vw);

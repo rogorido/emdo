@@ -17,7 +17,8 @@
         <MainPageScroller />
       </q-page>
     </q-page-container>
-    <MainFooter />
+    <SmallFooter class="lt-md" />
+    <MainFooter class="gt-sm" />
   </q-layout>
 </template>
 
@@ -25,10 +26,11 @@
 import { defineComponent } from 'vue';
 
 import LeftColumn from 'components/LeftColumn.vue';
-import MainHeader from 'components/MainHeader.vue';
-import MainFooter from 'components/MainFooter.vue';
+import MainHeader from 'components/layout/MainHeader.vue';
+import MainFooter from 'components/layout/MainFooter.vue';
+import SmallFooter from 'components/layout/SmallFooter.vue';
 import MainPageScroller from 'components/MainPageScroller.vue';
-import BigHero from 'components/BigHero.vue';
+import BigHero from 'components/layout/BigHero.vue';
 
 export default defineComponent({
   name: 'MainPageLayout',
@@ -37,6 +39,7 @@ export default defineComponent({
     LeftColumn,
     MainHeader,
     MainFooter,
+    SmallFooter,
     MainPageScroller,
     BigHero
   }
