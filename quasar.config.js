@@ -9,6 +9,14 @@
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
 const { configure } = require('quasar/wrappers');
+// const routes = require('src/router/routes.js');
+
+// https://www.npmjs.com/package/vite-plugin-pages-sitemap
+// const Pages = require('vite-plugin-pages');
+// const { generateSitemap } = require('vite-plugin-pages-sitemap');
+
+// const names = ['John', 'Bryce', 'Addison', 'Dana'];
+// const dynamicRoutes = names.map((name) => `/names/${name}`);
 
 module.exports = configure(function (/* ctx */) {
   return {
@@ -72,9 +80,7 @@ module.exports = configure(function (/* ctx */) {
       // extendViteConf (viteConf) {},
       // viteVuePluginOptions: {},
 
-      // vitePlugins: [
-      //   [ 'package-name', { ..options.. } ]
-      // ]
+      //   vitePlugins: [['vite-plugin-sitemap', { routes }]]
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#devServer
