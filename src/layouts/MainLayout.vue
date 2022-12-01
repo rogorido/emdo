@@ -9,7 +9,7 @@
           <div :class="`col-md-3 ${$q.screen.lt.md ? 'hidden' : ''}`">
             <LeftColumn />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 central">
             <router-view />
           </div>
           <div class="col-md-3"></div>
@@ -42,3 +42,11 @@ export default defineComponent({
   }
 });
 </script>
+
+<style lang="scss" scoped>
+@media (max-width: 800px) {
+  .central {
+    padding: 0 20px;
+  }
+}
+</style>
