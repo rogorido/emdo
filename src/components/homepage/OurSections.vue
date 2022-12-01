@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h4 class="text-center">Our sections</h4>
+    <h4 class="text-center">Our main sections</h4>
 
     <div
       class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-lg"
@@ -33,7 +33,7 @@
     >
       <div class="col imageshown">
         <q-img
-          src="images/bishops.webp"
+          src="~assets/images/bishops.webp"
           alt="bishops"
           height="400px"
           style="border-radius: 10% 30% 50% 70%"
@@ -60,7 +60,7 @@
     >
       <div class="col imageshown">
         <q-img
-          src="images/cagayan.png"
+          src="~assets/images/acta4-r.avif"
           alt="chapters"
           height="400px"
           style="border-radius: 10% 30% 50% 70%"
@@ -113,10 +113,9 @@
     >
       <div class="col imageshown">
         <q-img
-          src="images/chronicon-icon.png"
+          src="~assets/images/tratado-colores.avif"
           alt="works"
           height="400px"
-          fit="contain"
           style="border-radius: 10% 30% 50% 70%"
         ></q-img>
       </div>
@@ -135,6 +134,7 @@
       </div>
     </div>
   </section>
+  <section><h4 class="text-center q-mt-md">Other sections</h4></section>
 </template>
 
 <script setup>
