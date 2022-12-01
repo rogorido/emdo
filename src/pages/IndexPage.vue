@@ -15,7 +15,11 @@
       web presenta a los investigadores informaciones variadas sobre la Orden
       producto de las investigaciones de su responsable,
       <router-link class="textlinks" to="/contact">Igor Sosa Mayor</router-link>
-      .
+      . Tanto los datos como el código usado
+      <router-link to="/getdata" class="textlinks"
+        >están accesibles</router-link
+      >
+      para otros investigadores.
     </p>
   </div>
 
