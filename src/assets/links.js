@@ -9,7 +9,7 @@ export const linksList = [
     title: 'Our sections',
     caption: 'What you find here',
     icon: 'school',
-    link: '/oursections'
+    link: '/sections'
   },
   {
     title: 'Links',

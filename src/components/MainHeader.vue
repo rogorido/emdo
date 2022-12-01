@@ -2,7 +2,7 @@
   <q-header>
     <q-toolbar class="text-primary bg-grey-1">
       <q-toolbar-title class="q-hoverable cursor-pointer" @click="goToHome()"
-        >Preacher's Order
+        >EMDO
       </q-toolbar-title>
       <q-list class="gt-sm"
         ><q-btn
