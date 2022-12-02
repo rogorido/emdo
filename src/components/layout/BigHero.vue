@@ -42,4 +42,33 @@ const goToHome = () => {
     color: black;
   }
 }
+
+@media (max-width: 800px) {
+  .hero {
+    background-image: url('../../assets/svg/patron.svg');
+
+    h2 {
+      font-size: clamp(21px, 3vw, 3vw);
+      padding-top: 80px;
+      padding-bottom: 10px;
+      font-weight: 900;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.0333em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: black;
+    }
+    h4 {
+      font-size: clamp(21px, 2vw, 2.2vw);
+      padding-bottom: 50px;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 0.0333em;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: black;
+    }
+  }
+}
 </style>

@@ -1,10 +1,6 @@
 <template>
   <q-header>
     <q-toolbar class="text-primary bg-grey-1 justify-center">
-      <!-- <q-toolbar-title class="q-hoverable cursor-pointer" @click="goToHome()"
-           ><q-img src="~assets/svg/logo-emdo.svg" width="150px"></q-img>
-           </q-toolbar-title> -->
-
       <q-list class="gt-sm"
         ><q-btn
           flat
