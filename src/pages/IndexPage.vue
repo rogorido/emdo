@@ -23,11 +23,11 @@
     </p>
   </div>
 
-  <OurSections />
+  <GeneralDescription />
 </template>
 
 <script setup>
-import OurSections from 'components/homepage/OurSections.vue';
+import GeneralDescription from 'components/homepage/GeneralDescription.vue';
 </script>
 
 <style lang="scss" scoped>
