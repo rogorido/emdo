@@ -21,26 +21,12 @@
   </q-layout>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
-
+<script setup>
 import LeftColumn from 'components/LeftColumn.vue';
 import MainHeader from 'components/layout/MainHeader.vue';
 import MainFooter from 'components/layout/MainFooter.vue';
 import MainPageScroller from 'components/MainPageScroller.vue';
 import SmallHero from 'components/layout/SmallHero.vue';
-
-export default defineComponent({
-  name: 'MainPageLayout',
-
-  components: {
-    LeftColumn,
-    MainHeader,
-    MainFooter,
-    MainPageScroller,
-    SmallHero
-  }
-});
 </script>
 
 <style lang="scss" scoped>

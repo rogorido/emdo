@@ -5,24 +5,14 @@
   </div>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
+<script setup>
 import { useRouter } from 'vue-router';
-export default defineComponent({
-  name: 'SmallHero',
 
-  setup() {
-    const router = useRouter();
+const router = useRouter();
 
-    const goToHome = () => {
-      router.push('/');
-    };
-
-    return {
-      goToHome
-    };
-  }
-});
+const goToHome = () => {
+  router.push('/');
+};
 </script>
 
 <style lang="scss" scoped>
