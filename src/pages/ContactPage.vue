@@ -5,21 +5,37 @@
   </p>
   <p>
     Soy licenciado en Filología Alemana por la
-    <a class="textlinks" href="https://www.uv.es" target="_blank"
+    <a
+      class="textlinks"
+      href="https://www.uv.es"
+      target="_blank"
+      rel="noopener noreferrer"
       >Universidad de Valencia</a
     >
     (España). Soy doctor en Lingüística Alemana por la
-    <a class="textlinks" href="https://www.fau.de" target="_blank"
+    <a
+      class="textlinks"
+      href="https://www.fau.de"
+      target="_blank"
+      rel="noopener noreferrer"
       >Friedrich-Alexander-Universität de Erlangen-Nürnberg</a
     >. Posteriormente reorienté mi actividad profesioanl hacia la historia y me
     doctoré en Historia en el Instituto Universitario Europeo de Florencia
     (Italia). Durante unos años fue investigador del Max-Weber-Kolleg für
     kultur- und sozialwissenschaftliche Studien de la
-    <a class="textlinks" href="https://www.uni-erfurt.de" target="_blank"
+    <a
+      class="textlinks"
+      href="https://www.uni-erfurt.de"
+      target="_blank"
+      rel="noopener noreferrer"
       >Universidad de Erfurt</a
     >
     (Alemania). Actualmente soy investigador de la
-    <a class="textlinks" href="https://www.uva.es" target="_blank"
+    <a
+      class="textlinks"
+      href="https://www.uva.es"
+      target="_blank"
+      rel="noopener noreferrer"
       >Universidad de Valladolid.</a
     >
   </p>

@@ -17,8 +17,8 @@
         <MainPageScroller />
       </q-page>
     </q-page-container>
-    <SmallFooter class="lt-md" />
-    <MainFooter class="gt-sm" />
+
+    <MainFooter />
   </q-layout>
 </template>
 
@@ -26,7 +26,6 @@
 import LeftColumn from 'components/LeftColumn.vue';
 import MainHeader from 'components/layout/MainHeader.vue';
 import MainFooter from 'components/layout/MainFooter.vue';
-import SmallFooter from 'components/layout/SmallFooter.vue';
 import MainPageScroller from 'components/MainPageScroller.vue';
 import BigHero from 'components/layout/BigHero.vue';
 </script>
