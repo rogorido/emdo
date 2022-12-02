@@ -2,7 +2,7 @@
   <h3>
     <em class="suave"
       >The most comprehensive webpage devoted to the
-      <span class="marked">Dominican Order</span> in the early modern
+      <span class="text-primary">Dominican Order</span> in the early modern
       period.</em
     >
   </h3>
@@ -37,9 +37,5 @@ import GeneralDescription from 'components/homepage/GeneralDescription.vue';
 
 .suave {
   opacity: 0.75;
-
-  .marked {
-    color: #cc0d12;
-  }
 }
 </style>

@@ -17,7 +17,8 @@
 $typography-font-family: 'Merriweather', serif;
 //$typography-font-family: "Lora", serif;
 
-$primary: #cc0d12;
+// original
+//$primary: #cc0d12;
 $secondary: #414156;
 $accent: #9c27b0;
 
@@ -32,6 +33,38 @@ $white: #fff;
 
 $body-font-size: 18px !default;
 //$body-font-size: 100% !default;
+
+//nueva paleta
+// https://www.colorhexa.com/3e7800
+// atención tenía este
+//$primary: #3e7800;
+// pero en algunos sitios veo q la versión segura web es
+$primary: #336600;
+$primary-complementary: #3a0078; //rgb(58,0,120)
+$triadic-1: #003e78;
+$triadic-2: #78003e;
+
+// paleta según adobe
+/* Color Theme Swatches in Hex */
+// $My-Color-Theme-1-hex: #690578;
+// $My-Color-Theme-2-hex: #e330ff;
+// $My-Color-Theme-3-hex: #ad12c4;
+// $My-Color-Theme-4-hex: #3e7800;
+// $My-Color-Theme-5-hex: #6ec412;
+
+// /* Color Theme Swatches in RGBA */
+// $My-Color-Theme-1-rgba: rgba(105, 4, 119, 1);
+// $My-Color-Theme-2-rgba: rgba(226, 47, 255, 1);
+// $My-Color-Theme-3-rgba: rgba(172, 17, 195, 1);
+// $My-Color-Theme-4-rgba: rgba(61, 119, 0, 1);
+// $My-Color-Theme-5-rgba: rgba(110, 195, 17, 1);
+
+// /* Color Theme Swatches in HSLA */
+// $My-Color-Theme-1-hsla: hsla(292, 92, 24, 1);
+// $My-Color-Theme-2-hsla: hsla(291, 100, 59, 1);
+// $My-Color-Theme-3-hsla: hsla(292, 83, 41, 1);
+// $My-Color-Theme-4-hsla: hsla(89, 100, 23, 1);
+// $My-Color-Theme-5-hsla: hsla(88, 83, 41, 1);
 
 $link-hover-color: lighten($primary, 42%) !default;
 $footer-color: lighten($primary, 40%) !default;

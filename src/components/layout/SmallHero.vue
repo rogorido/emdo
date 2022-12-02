@@ -1,6 +1,6 @@
 <template>
   <div class="hero q-hoverable cursor-pointer" @click="goToHome()">
-    <h2><span style="color: #cc0d12">Early Modern</span> Dominican Order</h2>
+    <h2><span class="text-primary">Early Modern</span> Dominican Order</h2>
     <h4><em>by </em>Igor Sosa Mayor</h4>
   </div>
 </template>

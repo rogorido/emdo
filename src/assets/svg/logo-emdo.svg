@@ -66,7 +66,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#cc0d12;stroke:#000000;stroke-width:0.446496"
+       style="fill:#336600;stroke:#000000;stroke-width:0.446496"
        id="rect962"
        width="37.821934"
        height="36.678635"
@@ -87,7 +87,7 @@
        x="80.458389"
        y="7.7791519" />
     <rect
-       style="fill:#cc0d12;stroke:#000000;stroke-width:0.446496"
+       style="fill:#336600;stroke:#000000;stroke-width:0.446496"
        id="rect973"
        width="37.821934"
        height="36.678635"
@@ -110,17 +110,17 @@
       <path
          d="m 36.546797,80.361576 0.96,-7.458 -1.374,-0.144 v -0.606 h 3.24 l 1.638,5.394 0.396,1.53 0.366,-1.53 1.668,-5.394 h 3.204 v 0.606 l -1.368,0.144 0.948,7.446 1.044,0.126 v 0.594 h -3.456 v -0.594 l 1.092,-0.114 -0.552,-5.388 -0.228,-2.322 -0.498,1.734 -2.004,6.276 h -0.804 l -1.89,-5.748 -0.648,-2.262 -0.246,2.322 -0.564,5.388 1.182,0.114 v 0.594 h -3.108 v -0.594 z"
          id="path1377"
-         style="fill:#cc0d12;fill-opacity:1" />
+         style="fill:#336600;fill-opacity:1" />
     </g>
     <g
        aria-label="D"
        transform="matrix(3.1399368,0,0,3.1399368,-26.274577,-214.44868)"
        id="text1288"
-       style="font-size:12px;line-height:1.25;font-family:Merriweather;-inkscape-font-specification:'Merriweather, Normal';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1290);display:inline;fill:#cc0d12;fill-opacity:1">
+       style="font-size:12px;line-height:1.25;font-family:Merriweather;-inkscape-font-specification:'Merriweather, Normal';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1290);display:inline;fill:#336600;fill-opacity:1">
       <path
          d="m 36.942797,80.361576 v -7.458 l -0.942,-0.144 v -0.606 h 1.572 q 0.558,0 1.062,-0.042 0.51,-0.048 1.056,-0.048 1.536,0 2.508,0.528 0.972,0.522 1.428,1.482 0.462,0.954 0.462,2.256 0,1.452 -0.576,2.556 -0.57,1.098 -1.596,1.704 -1.026,0.606 -2.388,0.576 -0.444,-0.012 -0.954,-0.054 -0.51,-0.042 -0.984,-0.042 h -1.65 v -0.594 z m 1.278,0.036 q 0.366,0.078 0.714,0.096 0.348,0.012 0.72,0.006 0.888,-0.012 1.572,-0.45 0.69,-0.444 1.08,-1.314 0.39,-0.87 0.39,-2.166 0,-1.872 -0.81,-2.862 -0.81,-0.996 -2.49,-0.996 -0.378,0 -0.672,0.036 -0.294,0.03 -0.504,0.042 z"
          id="path1777"
-         style="fill:#cc0d12;fill-opacity:1" />
+         style="fill:#336600;fill-opacity:1" />
     </g>
     <g
        aria-label="0"
