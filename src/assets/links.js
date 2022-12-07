@@ -1,32 +1,30 @@
 export const linksList = [
   {
     title: 'Home',
-    icon: 'school',
+    caption: 'Main page',
     link: '/'
   },
 
   {
     title: 'Our sections',
     caption: 'What you find here',
-    icon: 'school',
     link: '/sections'
   },
   {
     title: 'Links',
-    icon: 'school',
+    caption: 'Links to the Dominican Order',
     link: '/links'
   },
 
   {
     title: 'About',
-    icon: 'school',
+    caption: 'About this page',
     link: '/about'
   },
 
   {
     title: 'Contact',
-    caption: 'Infrastructure of the Order',
-    icon: 'chat',
+    caption: 'Contact the author',
     link: '/contact'
   }
 ];

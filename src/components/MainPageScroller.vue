@@ -5,7 +5,7 @@
     :scroll-offset="150"
     :offset="[18, 18]"
   >
-    <q-btn color="primary">
+    <q-btn color="primary" aria-label="Button to scroll up">
       <q-img
         src="~assets/svg/chevron-up-solid.svg"
         width="24px"

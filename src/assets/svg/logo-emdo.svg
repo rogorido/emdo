@@ -2,12 +2,12 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="600"
-   height="200"
-   viewBox="0 0 158.75 52.916667"
+   width="593.6272"
+   height="140.31546"
+   viewBox="0 0 157.06386 37.125132"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="logo-emdo.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.115"
-     inkscape:cx="281.79669"
-     inkscape:cy="150.1182"
+     inkscape:cx="278.25059"
+     inkscape:cy="121.74941"
      inkscape:window-width="1918"
      inkscape:window-height="1052"
      inkscape:window-x="0"
@@ -37,34 +37,35 @@
   <defs
      id="defs2">
     <rect
-       x="35.465827"
-       y="70.176246"
+       x="35.465828"
+       y="70.176247"
        width="75.063026"
-       height="66.941729"
+       height="66.941727"
        id="rect1182" />
     <rect
-       x="35.465827"
-       y="70.176246"
+       x="35.465828"
+       y="70.176247"
        width="75.063026"
-       height="66.941729"
+       height="66.941727"
        id="rect1216" />
     <rect
-       x="35.465827"
-       y="70.176246"
+       x="35.465828"
+       y="70.176247"
        width="75.063026"
-       height="66.941729"
+       height="66.941727"
        id="rect1290" />
     <rect
-       x="35.465827"
-       y="70.176246"
+       x="35.465828"
+       y="70.176247"
        width="75.063026"
-       height="66.941729"
+       height="66.941727"
        id="rect1319" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-1.0381881,-7.5559039)">
     <rect
        style="fill:#167800;stroke:#000000;stroke-width:0.446496"
        id="rect962"
@@ -73,14 +74,14 @@
        x="1.2614361"
        y="7.7791519" />
     <rect
-       style="fill:#000000;stroke:#000000;stroke-width:0.446496;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.446496"
        id="rect969"
        width="37.821934"
        height="36.678635"
        x="40.859913"
        y="7.7791519" />
     <rect
-       style="fill:#000000;stroke:#000000;stroke-width:0.446496;fill-opacity:1"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.446496"
        id="rect971"
        width="37.821934"
        height="36.678635"

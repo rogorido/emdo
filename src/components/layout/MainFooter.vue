@@ -1,5 +1,5 @@
 <template>
-  <q-footer elevated class="q-pt-xl">
+  <q-footer elevated>
     <div class="row justify-around q-pb-md">
       <div class="footer-col">
         <q-img
@@ -13,7 +13,7 @@
         </p>
       </div>
       <div class="footer-col">
-        <p class="q-mt-md">
+        <p>
           This site is part of my site <br /><a
             target="_blank"
             class="text-primary"
@@ -23,9 +23,7 @@
         </p>
       </div>
       <div class="footer-col">
-        <div class="q-mt-md">
-          <SocialLinks />
-        </div>
+        <SocialLinks />
       </div>
     </div>
     <div class="row justify-around">
@@ -50,15 +48,7 @@ import SocialLinks from 'components/SocialLinks.vue';
   background-color: $grey-3;
   color: black;
   font-size: 0.8em;
-}
-
-/* .col {
-     flex: 0 1 auto;
-     } */
-
-ul {
-  list-style: none;
-  margin-top: 0px;
+  padding-top: 2em;
 }
 
 a {

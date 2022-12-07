@@ -1,7 +1,7 @@
 <template>
   <div class="hero q-hoverable cursor-pointer" @click="goToHome()">
     <h2><span class="text-primary">Early Modern</span> Dominican Order</h2>
-    <h4><em>by </em>Igor Sosa Mayor</h4>
+    <div class="ownname"><em>by </em>Igor Sosa Mayor</div>
   </div>
 </template>
 
@@ -31,8 +31,8 @@ const goToHome = () => {
     margin-bottom: 0px;
     color: black;
   }
-  h4 {
-    font-size: clamp(21px, 2vw, 2.2vw);
+  .ownname {
+    font-size: clamp(18px, 2vw, 2.2vw);
     padding-bottom: 15vh;
     font-weight: 500;
     text-align: center;

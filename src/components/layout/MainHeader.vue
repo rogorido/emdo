@@ -18,14 +18,21 @@
         aria-label="Menu"
         @click="toggleLeftDrawer"
         class="lt-md"
-        ><i class="fa-solid fa-bars"></i
-      ></q-btn>
+      >
+        <q-img
+          src="~assets/svg/bars-solid.svg"
+          width="36px"
+          height="36px"
+        ></q-img>
+      </q-btn>
     </q-toolbar>
   </q-header>
 
   <q-drawer v-model="leftDrawerOpen" bordered>
     <q-list>
-      <q-item-label header> Essential Links </q-item-label>
+      <q-item-label header>
+        <q-img src="~assets/svg/logo-emdo.svg" width="150px"></q-img>
+      </q-item-label>
 
       <EssentialLink
         v-for="link in linksList"
