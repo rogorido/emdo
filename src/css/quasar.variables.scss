@@ -14,6 +14,7 @@
 
 //@import url("https://fonts.googleapis.com/css?family=Lora:400|Open+Sans:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
 $typography-font-family: 'Merriweather', serif;
 //$typography-font-family: "Lora", serif;
 
@@ -32,14 +33,13 @@ $warning: #f2c037;
 $white: #fff;
 
 $body-font-size: 18px !default;
+//$body-font-size: 1rem !default;
 //$body-font-size: 100% !default;
 
 //nueva paleta
 // https://www.colorhexa.com/3e7800
-// atención tenía este
 //$primary: #3e7800;
-// pero en algunos sitios veo q la versión segura web es
-$primary: #336600;
+$primary: #167800;
 $primary-complementary: #3a0078; //rgb(58,0,120)
 $triadic-1: #003e78;
 $triadic-2: #78003e;
@@ -66,7 +66,7 @@ $triadic-2: #78003e;
 // $My-Color-Theme-4-hsla: hsla(89, 100, 23, 1);
 // $My-Color-Theme-5-hsla: hsla(88, 83, 41, 1);
 
-$link-hover-color: lighten($primary, 42%) !default;
+$link-hover-color: lighten($primary, 10%) !default;
 $footer-color: lighten($primary, 40%) !default;
 
 // posible paleta
@@ -83,3 +83,12 @@ $color2: #fbd1a2; // deep champagne
 $color3: #ece4b7; // lemon maringue
 $color4: #7dcfb6; // middle blue green
 $color5: #33ca7f; // emerald
+
+// una buena es esta:
+// https://colorhunt.co/palette/aa2b1dcc561eef8d32beca5c
+// color1: #AA2B1D;
+// color2: #CC561E;
+// color3: #EF8D32;
+// color4: #BECA5C;
+
+// unos buenos tonos de azules

@@ -1,11 +1,11 @@
 <template>
-  <h3>
+  <h4>
     <em class="suave"
       >The most comprehensive webpage devoted to the
       <span class="text-primary">Dominican Order</span> in the early modern
       period.</em
     >
-  </h3>
+  </h4>
   <div class="intro">
     <p>
       La orden de predicadores vivió durante la Edad Moderna una época de

@@ -1,6 +1,6 @@
 {
   "name": "webpreachers",
-  "version": "0.0.66",
+  "version": "0.0.68",
   "description": "A web about the Preachers Order",
   "productName": "WebPreachers",
   "author": "Igor Sosa Mayor <joseleopoldo1792@gmail.com>",
@@ -11,15 +11,15 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "axios": "^1.2.0",
+    "axios": "^1.2.1",
     "pinia": "^2.0.27",
-    "@quasar/extras": "^1.15.6",
+    "@quasar/extras": "^1.15.7",
     "quasar": "^2.10.2",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-vue": "^9.8.0",
     "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.8.0",

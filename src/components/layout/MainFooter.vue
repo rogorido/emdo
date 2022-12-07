@@ -1,7 +1,7 @@
 <template>
-  <q-footer elevated>
-    <div class="row justify-evenly">
-      <div class="col">
+  <q-footer elevated class="q-pt-xl">
+    <div class="row justify-around q-pb-md">
+      <div class="footer-col">
         <q-img
           class="q-hoverable cursor-pointer"
           src="~assets/svg/logo-emdo.svg"
@@ -12,7 +12,7 @@
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
         </p>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <p class="q-mt-md">
           This site is part of my site <br /><a
             target="_blank"
@@ -22,40 +22,14 @@
           >
         </p>
       </div>
-      <div class="q-mt-md">
-        <!-- <div class="text-h6 text-center">Contact</div> -->
-        <div class="col social">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/rogorido"
-          >
-            <i class="fa-brands fa-twitter" />
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/rogorido"
-          >
-            <i class="fa-brands fa-github" />
-          </a>
-
-          <a href="mailto:igor.sosa@georeligion.org"
-            ><i class="fa-regular fa-envelope"></i>
-          </a>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://fedihum.org/@rogorido"
-            ><i class="fa-brands fa-mastodon"></i>
-          </a>
+      <div class="footer-col">
+        <div class="q-mt-md">
+          <SocialLinks />
         </div>
       </div>
     </div>
-    <div class="row justify-center">
-      <div class="col">
+    <div class="row justify-around">
+      <div class="footer-col">
         <p>
           This site was created with
           <a target="_blank" rel="noopener noreferrer" href="https://quasar.dev"
@@ -67,6 +41,10 @@
   </q-footer>
 </template>
 
+<script setup>
+import SocialLinks from 'components/SocialLinks.vue';
+</script>
+
 <style lang="scss" scoped>
 .q-footer {
   background-color: $grey-3;
@@ -74,9 +52,9 @@
   font-size: 0.8em;
 }
 
-.col {
-  flex: 0 1 auto;
-}
+/* .col {
+     flex: 0 1 auto;
+     } */
 
 ul {
   list-style: none;
@@ -87,21 +65,20 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.social {
-  font-size: 30px;
-  display: flex;
-  justify-content: center;
-  color: $primary;
 
-  a {
-    margin-left: 20px;
-  }
+/* esto no me convence nada  */
+.footer-col {
+  flex: 0 0 300px;
 }
 
 @media (max-width: 800px) {
   .row {
     flex-direction: column;
     align-items: center;
+  }
+
+  .footer-col {
+    flex: 1 0 auto;
   }
 }
 </style>

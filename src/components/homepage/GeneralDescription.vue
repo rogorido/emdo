@@ -109,6 +109,10 @@ const goToSite = (site) => {
   height: 400px;
 }
 
+/* .q-img:hover {
+     transform: scale(1.05);
+     } */
+
 @media (min-width: 701px) {
   .oferta:nth-of-type(2n) {
     .imageshown {
