@@ -1,61 +1,64 @@
 <template>
   <h3 class="text-center">Contact</h3>
+  <p>These pages are written, designed and maintained by Igor Sosa Mayor.</p>
   <p>
-    Estas páginas están escritas, diseñadas y mantenidas por Igor Sosa Mayor.
-  </p>
-  <p>
-    Soy licenciado en Filología Alemana por la
+    I have a degree in German Philology from the
     <a
       class="textlinks"
       href="https://www.uv.es"
       target="_blank"
       rel="noopener noreferrer"
-      >Universidad de Valencia</a
+      >University Valencia</a
     >
-    (España). Soy doctor en Lingüística Alemana por la
-    <a
+    (Spain). I am a doctor in German Linguistics (<a
       class="textlinks"
       href="https://www.fau.de"
       target="_blank"
       rel="noopener noreferrer"
-      >Friedrich-Alexander-Universität de Erlangen-Nürnberg</a
-    >. Posteriormente reorienté mi actividad profesioanl hacia la historia y me
-    doctoré en Historia en el Instituto Universitario Europeo de Florencia
-    (Italia). Durante unos años fue investigador del Max-Weber-Kolleg für
-    kultur- und sozialwissenschaftliche Studien de la
+      >Friedrich-Alexander-Universität Erlangen-Nürnberg</a
+    >, Germany). Later I reoriented my professional activity towards history and
+    I received my PhD in History from the European University Institute of
+    Florence, Italy). During a few years I was researcher at the
+    <a
+      class="textlinks"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.uni-erfurt.de/max-weber-kolleg/"
+      >Max-Weber-Kolleg für kultur- und sozialwissenschaftliche Studien</a
+    >
+    at the
     <a
       class="textlinks"
       href="https://www.uni-erfurt.de"
       target="_blank"
       rel="noopener noreferrer"
-      >Universidad de Erfurt</a
+      >University Erfurt</a
     >
-    (Alemania). Actualmente soy investigador de la
+    (Germany). At the present I am researcher at the
     <a
       class="textlinks"
       href="https://www.uva.es"
       target="_blank"
       rel="noopener noreferrer"
-      >Universidad de Valladolid.</a
+      >University Valladolid</a
     >
+    (Spain).
   </p>
   <p>
-    Mi tema central de investigación son las transformaciones socio-religiosas
-    de la Edad Moderna católica. Mi interés actual se ha ampliado y se centra en
-    cuestiones de geopolítica religiosa desde una perspectiva global. Esta
-    página es de hecho una subpágina de una website más general llamada
+    My main research topic has been for many years the socio-religious
+    transformations in Catholic world in the early modern period. My current
+    interests current have expanded and focus on issues of religious geopolitics
+    from a global perspective in the same period. This page is actually part of
+    my most general page
     <a class="textlinks" href="https://www.georeligion.org" target="_blank"
       >https://www.georeligion.org</a
     >.
   </p>
+  <p>If you want to contact me, send me an email or contact me on mastodon.</p>
   <p>
-    Aquellas personas que me quieran contactar lo pueden hacer por email o en
-    mastodon.
-  </p>
-  <p>
-    En cuanto a los datos y el código de sta página, lea por favor la
-    información pertinente en
-    <router-link class="textlinks" to="/getdata">esta página</router-link>.
+    The raw data and the code used in this page are available for other
+    researchers. Please read the information regarding legal conditions on
+    <router-link class="textlinks" to="/getdata">this page</router-link>.
   </p>
   <div class="flex flex-center"><div class="separador"></div></div>
 </template>
@@ -64,7 +67,7 @@
 .separador {
   margin: 30px 0;
   background-image: url('../assets/svg/pattern_05.svg');
-  height: 200px;
+  height: 150px;
   width: 100%;
 }
 </style>

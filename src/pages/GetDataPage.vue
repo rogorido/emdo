@@ -8,7 +8,12 @@
       costs in the Order of Preachers (1570-1700)
     </em>
     se vincula a la idea de la
-    <a href="https://digital.csic.es/handle/10261/145975" target="_blank">
+    <a
+      class="textlinks"
+      rel="noopener noreferrer"
+      href="https://digital.csic.es/handle/10261/145975"
+      target="_blank"
+    >
       ciencia reproducible</a
     >, por lo que tantos los datos como los pasos para llegar a los análisis, o
     en otras palabras, el código usado (javascript, SQL, python, etc.) está
@@ -20,7 +25,12 @@
     <li>
       los datos brutos en forma de fichero dump de la base de datos PostgrSQL
       usada se puede encontrar
-      <a href="https://www.github.com/rogorido/dominicansdb">
+      <a
+        class="textlinks"
+        href="https://www.github.com/rogorido/dominicansdb"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         en la página de github</a
       >
     </li>
@@ -28,7 +38,12 @@
       los datos sobre las casas dominicas se encuentran en la base de datos
       mencionada y se puede instalar una API en un servidor propio con el código
       que se encuentra en
-      <a href="https://github.com/rogorido/apihouses">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        class="textlinks"
+        href="https://github.com/rogorido/apihouses"
+      >
         en la página de github</a
       >
     </li>
@@ -45,18 +60,33 @@
   <ul>
     <li>
       El código (por ejemplo javascript, etc.) está liberado bajo la licencia
-      <a href="https://www.gnu.org/licenses/gpl-3.0.html">
+      <a
+        class="textlinks"
+        rel="noopener noreferrer"
+        href="https://www.gnu.org/licenses/gpl-3.0.html"
+        target="_blank"
+      >
         GPL license version 3</a
       >
       Se halla disponible en mi
-      <a href="https://www.github.com/rogorido" target="_blank">
+      <a
+        class="textlinks"
+        rel="noopener noreferrer"
+        href="https://www.github.com/rogorido"
+        target="_blank"
+      >
         cuenta de github
       </a>
       .
     </li>
     <li>
       Las bases de datos se encuentra liberadas bajo la licencia
-      <a href="https://opendatacommons.org/licenses/odbl/" target="_blank">
+      <a
+        class="textlinks"
+        href="https://opendatacommons.org/licenses/odbl/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Open Data Commons Open Database License (ODbL, v.1.0)</a
       >
       . O, en otras palabras, los interesados pueden compartir, usar y adaptar
@@ -64,4 +94,14 @@
       otros hacer lo mismo.
     </li>
   </ul>
+  <div class="flex flex-center"><div class="separador"></div></div>
 </template>
+
+<style lang="scss" scoped>
+.separador {
+  margin: 30px 0;
+  background-image: url('../assets/svg/pattern_05.svg');
+  height: 200px;
+  width: 100%;
+}
+</style>
