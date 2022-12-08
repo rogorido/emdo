@@ -1,0 +1,122 @@
+{
+  "initialPagination": {
+    "sortBy": "desc",
+    "descending": false,
+    "page": 1,
+    "rowsPerPage": 20
+  },
+  "columnsAuthorsAll": [
+    {
+      "name": "person_id",
+      "label": "ID",
+      "required": true,
+      "align": "left",
+      "field": "person_id",
+      "sortable": false,
+      "visible": false
+    },
+    {
+      "name": "author",
+      "label": "Author",
+      "required": true,
+      "align": "left",
+      "field": "author",
+      "sortable": true
+    },
+    {
+      "name": "datebirth",
+      "label": "Nacimiento",
+      "required": true,
+      "align": "right",
+      "field": "datebirth",
+      "sortable": true
+    },
+    {
+      "name": "datedeath",
+      "label": "Muerte",
+      "required": true,
+      "align": "right",
+      "field": "datedeath",
+      "sortable": true
+    },
+    {
+      "name": "totaloriginal",
+      "label": "Total (originales)",
+      "align": "right",
+      "field": "totaloriginal",
+      "sortable": true
+    },
+    {
+      "name": "totalprinted",
+      "label": "Total (impresos)",
+      "align": "right",
+      "field": "totalprinted",
+      "sortable": true
+    },
+    {
+      "name": "totalmanuscrit",
+      "label": "Total (manuscritos)",
+      "align": "right",
+      "field": "totalmanuscrit",
+      "sortable": true
+    },
+    {
+      "name": "totalreed",
+      "label": "Total (reediciones)",
+      "align": "right",
+      "field": "totalreed",
+      "sortable": true
+    }
+  ],
+  "columnsCatsAuthorById": [
+    {
+      "name": "theme_id",
+      "label": "ID",
+      "required": true,
+      "align": "right",
+      "field": "theme_id"
+    },
+    {
+      "name": "theme",
+      "label": "Tema",
+      "required": true,
+      "align": "left",
+      "field": "theme",
+      "sortable": true
+    },
+    {
+      "name": "total",
+      "label": "Total",
+      "required": true,
+      "align": "right",
+      "field": "total",
+      "sortable": true
+    }
+  ],
+  "columnsCategoriesAll": [
+    {
+      "name": "theme_id",
+      "label": "ID",
+      "required": true,
+      "align": "right",
+      "field": "theme_id"
+    },
+    {
+      "name": "theme",
+      "label": "Tema",
+      "required": true,
+      "align": "left",
+      "field": "theme",
+      "sortable": true
+    },
+
+    {
+      "name": "total",
+      "label": "Total",
+      "required": true,
+      "align": "right",
+      "field": "total",
+      "sortable": true
+    }
+  ]
+}
