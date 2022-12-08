@@ -44,6 +44,11 @@
       </q-card>
     </div>
   </div>
+  <div v-if="info" class="row">
+    <div class="col">
+      <DecadesChart :decades="info.decades" />
+    </div>
+  </div>
   <div v-if="info" class="row items-start q-gutter-md">
     <q-table title="Lugares" :rows="info.places"> </q-table>
     <q-table
@@ -64,22 +69,18 @@
         </AuthorItem>
       </q-list>
     </div>
-    <div class="col">
-      <DecadesChart :decades="info.decades" />
-    </div>
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import { works } from 'boot/axios';
+import AuthorItem from './AuthorItem.vue';
+import DecadesChart from './CategoriesDecadesChart.vue';
 import {
   columnsCatsAuthorById,
   initialPagination
 } from '../../assets/columnsvariables';
-
-import AuthorItem from './AuthorItem.vue';
-import DecadesChart from './CategoriesDecadesChart.vue';
 
 const props = defineProps({
   category_id: String
@@ -87,7 +88,6 @@ const props = defineProps({
 
 const info = ref();
 
-console.log(props.category_id);
 const loadCategory = async () => {
   try {
     const response = await works.get(`/categories/${props.category_id}`);
