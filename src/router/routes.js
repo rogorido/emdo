@@ -22,10 +22,18 @@ const routes = [
       { path: '/about', component: () => import('pages/AboutPage.vue') },
       { path: '/contact', component: () => import('pages/ContactPage.vue') },
       { path: '/getdata', component: () => import('pages/GetDataPage.vue') },
+      {
+        path: '/technicaldata',
+        component: () => import('pages/TechnicalDataPage.vue')
+      },
       { path: '/links', component: () => import('pages/LinksPage.vue') },
       {
         path: '/bibliography',
         component: () => import('pages/BibliographyPage.vue')
+      },
+      {
+        path: '/worksdb',
+        component: () => import('pages/works/WorksMainPage.vue')
       }
     ]
   },
