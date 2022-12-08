@@ -58,7 +58,12 @@
   <p>
     The raw data and the code used in this page are available for other
     researchers. Please read the information regarding legal conditions on
-    <router-link class="textlinks" to="/getdata">this page</router-link>.
+    <router-link class="textlinks" to="/getdata">this page</router-link> and, if
+    you want, the
+    <router-link class="textlinks" to="/technicaldata"
+      >technical information</router-link
+    >
+    about data and code.
   </p>
   <div class="flex flex-center"><div class="separador"></div></div>
 </template>

@@ -134,7 +134,6 @@
       </div>
     </div>
   </section>
-  <section><h4 class="text-center q-mt-md">Other sections</h4></section>
 </template>
 
 <script setup>
