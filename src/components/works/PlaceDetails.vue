@@ -73,7 +73,7 @@ import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
 
 const props = defineProps({
-  place_id: String
+  place_id: Number
 });
 
 const info = ref();
@@ -82,7 +82,6 @@ const loadPlace = async () => {
   try {
     const response = await works.get(`/places/${props.place_id}`);
     info.value = response.data;
-    console.log(info.value);
   } catch (err) {
     console.log('este es el error', err);
   }
