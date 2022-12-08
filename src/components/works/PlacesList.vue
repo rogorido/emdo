@@ -24,6 +24,8 @@ import {
   visibleColumnsPlaces
 } from '../../assets/columnsnames';
 
+import { usePlaceStore } from '../../stores/placesStore';
+
 export default defineComponent({
   name: 'PlacesComponent',
 
@@ -31,12 +33,16 @@ export default defineComponent({
     const datos = ref([]);
     const place_id = ref(null);
 
+    const store = usePlaceStore();
     const router = useRouter();
 
     const onRowClicked = (evt, row) => {
-      console.log('clicked on', row.place);
       place_id.value = row.place_print_id;
-      router.push(`/works/places/${place_id.value}`);
+      store.placeSelected(place_id.value);
+      router.push({
+        name: 'placebyid',
+        params: { id: place_id.value }
+      });
     };
 
     const places = await works.get('/places/');

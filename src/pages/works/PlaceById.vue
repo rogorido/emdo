@@ -1,9 +1,10 @@
 <template>
   <q-page>
     <h4>Place: {{ $route.params.id }}</h4>
+
     <Suspense>
       <template #default>
-        <PlaceDetails :place_id="$route.params.id" />
+        <PlaceDetails :place_id="store.place" />
       </template>
       <template #fallback>
         <div>Loading...</div>
@@ -14,4 +15,7 @@
 
 <script setup>
 import PlaceDetails from '../../components/works/PlaceDetails.vue';
+import { usePlaceStore } from '../../stores/placesStore';
+
+const store = usePlaceStore();
 </script>
