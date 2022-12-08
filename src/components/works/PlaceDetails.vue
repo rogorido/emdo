@@ -59,8 +59,8 @@
   </div>
 </template>
 
-<script>
-import { defineComponent, ref, watch } from 'vue';
+<script setup>
+import { ref } from 'vue';
 import { works } from 'boot/axios';
 import {
   columnsCatsAuthorById,
@@ -70,48 +70,23 @@ import {
 import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
 
-export default defineComponent({
-  name: 'PlaceDetails',
-
-  props: ['place_id'],
-
-  components: { AuthorItem, DecadesChart },
-
-  setup(props) {
-    const info = ref();
-
-    console.log(props.place_id);
-    const loadPlace = async () => {
-      try {
-        const response = await works.get(`/places/${props.place_id}`);
-        info.value = response.data;
-        console.log(info.value);
-      } catch (err) {
-        console.log('este es el error', err);
-      }
-    };
-
-    if (props.place_id != null) {
-      loadPlace();
-    }
-    // Atención esta estrucutra tan rara proviene de aquí
-    // https://stackoverflow.com/questions/59125857/how-to-watch-props-change-with-vue-composition-api-vue-3
-    // entiendo q la idea es que watch necesita una ref y eso lo
-    // transforma y luego ejecutoa lo otro. Aquí está el manual
-    // https://vuejs.org/guide/essentials/watchers.html#watch-source-types
-    // watch(
-    //   () => props.category_id,
-    //   async () => {
-    //     const response = await api.get(`/categories/${props.category_id}`);
-    //     info.value = response.data;
-    //   }
-    // );
-
-    return {
-      info,
-      columnsCatsAuthorById,
-      initialPagination
-    };
-  }
+const props = defineProps({
+  place_id: String
 });
+
+const info = ref();
+
+const loadPlace = async () => {
+  try {
+    const response = await works.get(`/places/${props.place_id}`);
+    info.value = response.data;
+    console.log(info.value);
+  } catch (err) {
+    console.log('este es el error', err);
+  }
+};
+
+if (props.place_id != null) {
+  loadPlace();
+}
 </script>
