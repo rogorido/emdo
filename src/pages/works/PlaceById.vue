@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <h1>Place: {{ $route.params.id }}</h1>
+    <h4>Place: {{ $route.params.id }}</h4>
     <Suspense>
       <template #default>
         <PlaceDetails :place_id="$route.params.id" />

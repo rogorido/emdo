@@ -1,37 +1,39 @@
 <template>
-  <p v-if="info">el lugar es: {{ info.noprintdata }}</p>
-  <div v-if="info" class="q-pa-md row items-start q-gutter-md">
-    <q-card class="bg-secondary text-white">
-      <q-card-section>
-        <div class="text-h6">Total de obras</div>
-      </q-card-section>
+  <div v-if="info" class="q-pa-md">
+    <h4 class="text-center">{{ info.place_name }}</h4>
+    <div class="row items-start q-gutter-md">
+      <q-card class="bg-secondary text-white">
+        <q-card-section>
+          <div class="text-h6">Total de obras</div>
+        </q-card-section>
 
-      <q-card-section>
-        {{ info.totalWorks }}
-      </q-card-section>
-    </q-card>
+        <q-card-section>
+          {{ info.totalWorks }}
+        </q-card-section>
+      </q-card>
 
-    <q-card class="bg-secondary text-white">
-      <q-card-section>
-        <div class="text-h6">Total de impresas</div>
-      </q-card-section>
-    </q-card>
+      <q-card class="bg-secondary text-white">
+        <q-card-section>
+          <div class="text-h6">Total de impresas</div>
+        </q-card-section>
+      </q-card>
 
-    <q-card class="bg-secondary text-white">
-      <q-card-section>
-        <div class="text-h6">Total de manuscritos</div>
-      </q-card-section>
-    </q-card>
+      <q-card class="bg-secondary text-white">
+        <q-card-section>
+          <div class="text-h6">Total de manuscritos</div>
+        </q-card-section>
+      </q-card>
 
-    <q-card class="bg-secondary text-white">
-      <q-card-section>
-        <div class="text-h6">Total de autores</div>
-      </q-card-section>
+      <q-card class="bg-secondary text-white">
+        <q-card-section>
+          <div class="text-h6">Total de autores</div>
+        </q-card-section>
 
-      <q-card-section>
-        {{ info.authors }}
-      </q-card-section>
-    </q-card>
+        <q-card-section>
+          {{ info.authors }}
+        </q-card-section>
+      </q-card>
+    </div>
   </div>
   <div v-if="info" class="row items-start q-gutter-md">
     <q-table title="Lugares" :rows="info.place_cats"> </q-table>
