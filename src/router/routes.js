@@ -34,6 +34,36 @@ const routes = [
       {
         path: '/worksdb',
         component: () => import('pages/works/WorksMainPage.vue')
+      },
+      {
+        path: '/works/places',
+        name: 'placeslist',
+        component: () => import('pages/works/PlacesPage.vue')
+      },
+      {
+        path: '/works/places/:id',
+        name: 'placebyid',
+        component: () => import('pages/works/PlaceById.vue')
+      },
+      {
+        path: '/works/authors',
+        name: 'authorslist',
+        component: () => import('pages/works/AuthorsPage.vue')
+      },
+      {
+        path: '/works/authors/:id',
+        name: 'authorbyid',
+        component: () => import('pages/works/AuthorById.vue')
+      },
+      {
+        path: '/works/categories',
+        name: 'categorieslist',
+        component: () => import('pages/works/CategoriesPage.vue')
+      },
+      {
+        path: '/works/categories/:id',
+        name: 'categorybyid',
+        component: () => import('pages/works/CategoryById.vue')
       }
     ]
   },
