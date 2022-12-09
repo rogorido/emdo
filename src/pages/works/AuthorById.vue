@@ -1,15 +1,12 @@
 <template>
-  <q-page>
-    <!-- <h1>Autor: {{ $route.params.id }}</h1> -->
-    <Suspense>
-      <template #default>
-        <AuthorDetails :author_id="store.author" />
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
-  </q-page>
+  <Suspense>
+    <template #default>
+      <AuthorDetails :author_id="store.author" />
+    </template>
+    <template #fallback>
+      <div>Loading...</div>
+    </template>
+  </Suspense>
 </template>
 
 <script setup>

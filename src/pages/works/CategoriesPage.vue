@@ -1,15 +1,13 @@
 <template>
-  <q-page>
-    <h2>Categories</h2>
-    <Suspense>
-      <template #default>
-        <CategoriesComponent />
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
-  </q-page>
+  <h2>Categories</h2>
+  <Suspense>
+    <template #default>
+      <CategoriesComponent />
+    </template>
+    <template #fallback>
+      <div>Loading...</div>
+    </template>
+  </Suspense>
 </template>
 
 <script setup>

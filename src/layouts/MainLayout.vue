@@ -3,7 +3,7 @@
     <MainHeader />
 
     <q-page-container>
-      <q-page>
+      <q-page class="q-mb-lg">
         <SmallHero />
         <div class="row">
           <div :class="`col-md-3 ${$q.screen.lt.md ? 'hidden' : ''}`">

@@ -1,15 +1,13 @@
 <template>
-  <q-page>
-    <h4 class="text-center">Authors</h4>
-    <Suspense>
-      <template #default>
-        <AuthorsComponent />
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
-  </q-page>
+  <h4 class="text-center">Authors</h4>
+  <Suspense>
+    <template #default>
+      <AuthorsComponent />
+    </template>
+    <template #fallback>
+      <div>Loading...</div>
+    </template>
+  </Suspense>
 </template>
 
 <script>

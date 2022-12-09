@@ -1,16 +1,14 @@
 <template>
-  <q-page>
-    <h4>Place: {{ $route.params.id }}</h4>
+  <h4>Place: {{ $route.params.id }}</h4>
 
-    <Suspense>
-      <template #default>
-        <PlaceDetails :place_id="store.place" />
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
-  </q-page>
+  <Suspense>
+    <template #default>
+      <PlaceDetails :place_id="store.place" />
+    </template>
+    <template #fallback>
+      <div>Loading...</div>
+    </template>
+  </Suspense>
 </template>
 
 <script setup>
