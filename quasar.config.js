@@ -18,7 +18,7 @@ const { configure } = require('quasar/wrappers');
 // const names = ['John', 'Bryce', 'Addison', 'Dana'];
 // const dynamicRoutes = names.map((name) => `/names/${name}`);
 
-module.exports = configure(function (/* ctx */) {
+module.exports = configure(function (ctx) {
   return {
     eslint: {
       // fix: true,
@@ -60,7 +60,7 @@ module.exports = configure(function (/* ctx */) {
         node: 'node16'
       },
 
-      vueRouterMode: 'history' // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -69,7 +69,11 @@ module.exports = configure(function (/* ctx */) {
 
       // publicPath: '/',
       // analyze: true,
-      // env: {},
+      env: {
+        APIWORKS: ctx.dev
+          ? 'http://localhost:8009'
+          : 'https://api.georeligion.org/dominicans'
+      }
       // rawDefine: {}
       // ignorePublicFolder: true,
       // minify: false,
