@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md row items-start q-gutter-md">
     <q-table
-      title="Categorías"
+      title="Categories"
       :rows="datos"
       :columns="columnsCategoriesAll"
       :pagination="initialPagination"
@@ -10,12 +10,12 @@
     >
     </q-table>
   </div>
-  <!-- <CategoryDetails :category_id="category_id"></CategoryDetails> -->
 </template>
 
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useCategoryStore } from '../../stores/categoryStore';
 import { works } from 'boot/axios';
 import {
   columnsCategoriesAll,
@@ -27,14 +27,14 @@ export default defineComponent({
 
   async setup() {
     const datos = ref([]);
-    const category_id = ref(null);
 
     const router = useRouter();
+    const store = useCategoryStore();
 
     const onRowClicked = (evt, row) => {
-      console.log('clicked on', row.theme);
-      category_id.value = row.theme_id;
-      router.push(`/works/categories/${category_id.value}`);
+      // console.log('clicked on', row.theme);
+      store.category = row.theme_id;
+      router.push(`/works/categories/${row.theme}`);
     };
 
     const categories = await works.get('/categories/');
@@ -44,8 +44,7 @@ export default defineComponent({
       datos,
       columnsCategoriesAll,
       initialPagination,
-      onRowClicked,
-      category_id
+      onRowClicked
     };
   }
 });

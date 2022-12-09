@@ -61,7 +61,7 @@ const routes = [
         component: () => import('pages/works/CategoriesPage.vue')
       },
       {
-        path: '/works/categories/:id',
+        path: '/works/categories/:category',
         name: 'categorybyid',
         component: () => import('pages/works/CategoryById.vue')
       }

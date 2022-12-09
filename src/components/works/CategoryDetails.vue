@@ -83,7 +83,7 @@ import {
 } from '../../assets/columnsvariables';
 
 const props = defineProps({
-  category_id: String
+  category_id: Number
 });
 
 const info = ref();

@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <h2>Categorías</h2>
+    <h2>Categories</h2>
     <Suspense>
       <template #default>
         <CategoriesComponent />
