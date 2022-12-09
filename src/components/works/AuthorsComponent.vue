@@ -14,26 +14,32 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { works } from 'boot/axios';
+import { useAuthorStore } from '../../stores/authorStore';
 import {
   columnsAuthorsAll,
   initialPagination
 } from '../../assets/columnsvariables';
-import { useRouter } from 'vue-router';
+import { createSlug } from '../../utils/createSlug';
 
 export default defineComponent({
   name: 'AuthorsComponent',
 
   async setup() {
     const datos = ref([]);
-    const author_id = ref(null);
 
     const router = useRouter();
+    const store = useAuthorStore();
 
     const onRowClicked = (evt, row) => {
       // console.log("clicked on", row.person_id);
-      author_id.value = row.person_id;
-      router.push(`/works/authors/${author_id.value}`);
+      store.authorSelected(row.person_id);
+      const slug = createSlug(row.author);
+      router.push({
+        name: 'authorbyid',
+        params: { author: slug }
+      });
     };
 
     const authorsall = await works.get('/authors/');
@@ -43,8 +49,7 @@ export default defineComponent({
       datos,
       columnsAuthorsAll,
       initialPagination,
-      onRowClicked,
-      author_id
+      onRowClicked
     };
   }
 });

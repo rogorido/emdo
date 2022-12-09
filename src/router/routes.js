@@ -51,7 +51,7 @@ const routes = [
         component: () => import('pages/works/AuthorsPage.vue')
       },
       {
-        path: '/works/authors/:id',
+        path: '/works/authors/:author',
         name: 'authorbyid',
         component: () => import('pages/works/AuthorById.vue')
       },
