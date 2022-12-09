@@ -21,6 +21,7 @@ import {
   columnsCategoriesAll,
   initialPagination
 } from '../../assets/columnsvariables';
+import { createSlug } from '../../utils/createSlug';
 
 export default defineComponent({
   name: 'CategoriesComponent',
@@ -32,9 +33,9 @@ export default defineComponent({
     const store = useCategoryStore();
 
     const onRowClicked = (evt, row) => {
-      // console.log('clicked on', row.theme);
       store.category = row.theme_id;
-      router.push(`/works/categories/${row.theme}`);
+      const slug = createSlug(row.theme);
+      router.push(`/works/categories/${slug}`);
     };
 
     const categories = await works.get('/categories/');
