@@ -41,7 +41,7 @@ const routes = [
         component: () => import('pages/works/PlacesPage.vue')
       },
       {
-        path: '/works/places/:id',
+        path: '/works/places/:place',
         name: 'placebyid',
         component: () => import('pages/works/PlaceById.vue')
       },

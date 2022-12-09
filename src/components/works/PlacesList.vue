@@ -17,31 +17,29 @@
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { works } from 'boot/axios';
-
+import { usePlaceStore } from '../../stores/placesStore';
 import {
   columnsPlacesAll,
   initialPaginationPlaces,
   visibleColumnsPlaces
 } from '../../assets/columnsnames';
-
-import { usePlaceStore } from '../../stores/placesStore';
+import { createSlug } from '../../utils/createSlug';
 
 export default defineComponent({
   name: 'PlacesComponent',
 
   async setup() {
     const datos = ref([]);
-    const place_id = ref(null);
 
     const store = usePlaceStore();
     const router = useRouter();
 
     const onRowClicked = (evt, row) => {
-      place_id.value = row.place_print_id;
-      store.placeSelected(place_id.value);
+      store.placeSelected(row.place_print_id);
+      const slug = createSlug(row.place);
       router.push({
         name: 'placebyid',
-        params: { id: place_id.value }
+        params: { place: slug }
       });
     };
 
@@ -53,8 +51,7 @@ export default defineComponent({
       columnsPlacesAll,
       initialPaginationPlaces,
       visibleColumnsPlaces,
-      onRowClicked,
-      place_id
+      onRowClicked
     };
   }
 });

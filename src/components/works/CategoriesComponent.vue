@@ -33,7 +33,7 @@ export default defineComponent({
     const store = useCategoryStore();
 
     const onRowClicked = (evt, row) => {
-      store.category = row.theme_id;
+      store.categorySelected(row.theme_id);
       const slug = createSlug(row.theme);
       router.push(`/works/categories/${slug}`);
     };
