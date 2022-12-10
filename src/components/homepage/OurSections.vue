@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h4 class="text-center">Our main sections</h4>
+    <h4 class="text-center">Main sections</h4>
 
     <div
       class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-lg"

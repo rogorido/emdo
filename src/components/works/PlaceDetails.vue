@@ -1,6 +1,8 @@
 <template>
+  <div id="mapid"></div>
   <div v-if="info" class="q-pa-md">
     <h4 class="text-center">{{ info.place_name }}</h4>
+
     <div class="row items-start q-gutter-md">
       <q-card class="bg-secondary text-white">
         <q-card-section>
@@ -62,9 +64,10 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script>
+import { ref, onMounted } from 'vue';
 import { works } from 'boot/axios';
+import L from 'leaflet';
 import {
   columnsCatsAuthorById,
   initialPagination
@@ -73,22 +76,57 @@ import {
 import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
 
-const props = defineProps({
-  place_id: Number
-});
+import 'leaflet/dist/leaflet.css';
 
-const info = ref();
+export default {
+  name: 'AboutPage',
+  props: ['place_id'],
 
-const loadPlace = async () => {
-  try {
-    const response = await works.get(`/places/${props.place_id}`);
-    info.value = response.data;
-  } catch (err) {
-    console.log('este es el error', err);
+  setup(props) {
+    const info = ref();
+    let mymap;
+
+    onMounted(() => {
+      mymap = L.map('mapid').setView([42.5145, -83.0147], 9);
+
+      L.tileLayer(
+        'https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+        {
+          attribution:
+            'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under ODbL.'
+        }
+      ).addTo(mymap);
+    });
+
+    const loadPlace = async () => {
+      try {
+        const response = await works.get(`/places/${props.place_id}`);
+        info.value = response.data;
+        const { coords } = info.value;
+        // coords is an array!
+        var circle = L.circle([coords[0].latitude, coords[0].longitude], {
+          color: 'red',
+          fillColor: '#f03',
+          fillOpacity: 0.7,
+          radius: 7500
+        }).addTo(mymap);
+        mymap.setView([coords[0].latitude, coords[0].longitude], 7);
+      } catch (err) {
+        console.log('este es el error', err);
+      }
+    };
+
+    if (props.place_id != null) {
+      loadPlace();
+    }
+
+    return { info, loadPlace };
   }
 };
-
-if (props.place_id != null) {
-  loadPlace();
-}
 </script>
+
+<style scoped>
+#mapid {
+  height: 250px;
+}
+</style>
