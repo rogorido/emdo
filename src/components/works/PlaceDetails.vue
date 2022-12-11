@@ -1,5 +1,7 @@
 <template>
-  <div id="mapid"></div>
+  <div class="q-mt-md">
+    <div id="mapid"></div>
+  </div>
   <div v-if="info" class="q-pa-md">
     <h4 class="text-center">{{ info.place_name }}</h4>
 
@@ -79,16 +81,15 @@ import DecadesChart from './CategoriesDecadesChart.vue';
 import 'leaflet/dist/leaflet.css';
 
 export default {
-  name: 'AboutPage',
+  name: 'PlacesDetails',
   props: ['place_id'],
+  components: { DecadesChart, AuthorItem },
 
   setup(props) {
     const info = ref();
     let mymap;
-
     onMounted(() => {
       mymap = L.map('mapid').setView([42.5145, -83.0147], 9);
-
       L.tileLayer(
         'https://stamen-tiles.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
         {
@@ -97,11 +98,11 @@ export default {
         }
       ).addTo(mymap);
     });
-
     const loadPlace = async () => {
       try {
         const response = await works.get(`/places/${props.place_id}`);
         info.value = response.data;
+        console.log(info.value);
         const { coords } = info.value;
         // coords is an array!
         var circle = L.circle([coords[0].latitude, coords[0].longitude], {
@@ -115,12 +116,10 @@ export default {
         console.log('este es el error', err);
       }
     };
-
     if (props.place_id != null) {
       loadPlace();
     }
-
-    return { info, loadPlace };
+    return { info, loadPlace, initialPagination };
   }
 };
 </script>

@@ -1,6 +1,4 @@
 <template>
-  <h4>Place: {{ $route.params.id }}</h4>
-
   <Suspense>
     <template #default>
       <PlaceDetails :place_id="store.place" />
