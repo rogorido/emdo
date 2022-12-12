@@ -11,6 +11,7 @@
           <em>Created by</em>
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
         </p>
+        <p>Copyright 2019-{{ new Date().getFullYear() }}</p>
       </div>
       <div class="footer-col">
         <p>
@@ -30,6 +31,10 @@
       <div class="footer-col">
         <p>
           This site was created with
+          <a target="_blank" rel="noopener noreferrer" href="https://vuejs.org/"
+            >VueJs</a
+          >
+          y
           <a target="_blank" rel="noopener noreferrer" href="https://quasar.dev"
             >Quasar</a
           >.
