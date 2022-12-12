@@ -23,7 +23,7 @@
       title="Categorías"
       :rows="info.cats"
       :columns="columnsCatsAuthorById"
-      :pagination="initialPagination"
+      :pagination="initialPaginationAuthors"
       row-key="theme_id"
       @row-click="onRowClicked"
     >
@@ -37,8 +37,8 @@ import { useRouter } from 'vue-router';
 import { works } from 'boot/axios';
 import {
   columnsCatsAuthorById,
-  initialPagination
-} from '../../assets/columnsvariables';
+  initialPaginationAuthors
+} from '../../assets/columnsnames';
 
 export default defineComponent({
   name: 'AuthorDetails',
@@ -70,7 +70,7 @@ export default defineComponent({
       info,
       onRowClicked,
       columnsCatsAuthorById,
-      initialPagination
+      initialPaginationAuthors
     };
   }
 });

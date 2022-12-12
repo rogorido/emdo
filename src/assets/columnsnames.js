@@ -80,6 +80,13 @@ export const initialPaginationHouses = {
   rowsPerPage: 20
 };
 
+export const initialPaginationCategories = {
+  sortBy: 'total',
+  descending: true,
+  page: 1,
+  rowsPerPage: 20
+};
+
 export const visibleColumnsPlaces = [
   'place',
   'total',
@@ -140,6 +147,129 @@ export const columnsHousesAll = [
     label: 'Univ. in 1450',
     align: 'right',
     field: 'univ1450',
+    sortable: true
+  }
+];
+
+export const columnsAuthorsAll = [
+  {
+    name: 'person_id',
+    label: 'ID',
+    required: true,
+    align: 'left',
+    field: 'person_id',
+    sortable: false
+  },
+  {
+    name: 'author',
+    label: 'Author',
+    required: true,
+    align: 'left',
+    field: 'author',
+    sortable: true
+  },
+  {
+    name: 'datebirth',
+    label: 'Nacimiento',
+    required: true,
+    align: 'right',
+    field: 'datebirth',
+    sortable: true
+  },
+  {
+    name: 'datedeath',
+    label: 'Muerte',
+    required: true,
+    align: 'right',
+    field: 'datedeath',
+    sortable: true
+  },
+  {
+    name: 'totaloriginal',
+    label: 'Total (originales)',
+    align: 'right',
+    field: 'totaloriginal',
+    sortable: true
+  },
+  {
+    name: 'totalprinted',
+    label: 'Total (impresos)',
+    align: 'right',
+    field: 'totalprinted',
+    sortable: true
+  },
+  {
+    name: 'totalmanuscrit',
+    label: 'Total (manuscritos)',
+    align: 'right',
+    field: 'totalmanuscrit',
+    sortable: true
+  },
+  {
+    name: 'totalreed',
+    label: 'Total (reediciones)',
+    align: 'right',
+    field: 'totalreed',
+    sortable: true
+  }
+];
+
+export const initialPaginationAuthors = {
+  sortBy: 'total',
+  descending: true,
+  page: 1,
+  rowsPerPage: 20
+};
+
+export const columnsCatsAuthorById = [
+  {
+    name: 'theme_id',
+    label: 'ID',
+    required: true,
+    align: 'right',
+    field: 'theme_id'
+  },
+  {
+    name: 'theme',
+    label: 'Tema',
+    required: true,
+    align: 'left',
+    field: 'theme',
+    sortable: true
+  },
+  {
+    name: 'total',
+    label: 'Total',
+    required: true,
+    align: 'right',
+    field: 'total',
+    sortable: true
+  }
+];
+
+export const columnsCategoriesAll = [
+  {
+    name: 'theme_id',
+    label: 'ID',
+    required: true,
+    align: 'right',
+    field: 'theme_id'
+  },
+  {
+    name: 'theme',
+    label: 'Tema',
+    required: true,
+    align: 'left',
+    field: 'theme',
+    sortable: true
+  },
+
+  {
+    name: 'total',
+    label: 'Total',
+    required: true,
+    align: 'right',
+    field: 'total',
     sortable: true
   }
 ];

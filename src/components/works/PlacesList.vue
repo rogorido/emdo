@@ -1,16 +1,14 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
-    <q-table
-      title="Places"
-      :rows="datos"
-      :columns="columnsPlacesAll"
-      :visible-columns="visibleColumnsPlaces"
-      :pagination="initialPaginationPlaces"
-      row-key="place_id"
-      @row-click="onRowClicked"
-    >
-    </q-table>
-  </div>
+  <q-table
+    title="Places"
+    :rows="datos"
+    :columns="columnsPlacesAll"
+    :visible-columns="visibleColumnsPlaces"
+    :pagination="initialPaginationPlaces"
+    row-key="place_id"
+    @row-click="onRowClicked"
+  >
+  </q-table>
 </template>
 
 <script>

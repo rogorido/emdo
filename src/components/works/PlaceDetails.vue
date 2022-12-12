@@ -49,7 +49,7 @@
     <q-table
       title="Formatos"
       :rows="info.totalFormats"
-      :pagination="initialPagination"
+      :pagination="initialPaginationPlaces"
     >
     </q-table>
   </div>
@@ -72,8 +72,8 @@ import { works } from 'boot/axios';
 import L from 'leaflet';
 import {
   columnsCatsAuthorById,
-  initialPagination
-} from '../../assets/columnsvariables';
+  initialPaginationPlaces
+} from '../../assets/columnsnames';
 
 import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
@@ -119,7 +119,7 @@ export default {
     if (props.place_id != null) {
       loadPlace();
     }
-    return { info, loadPlace, initialPagination };
+    return { info, loadPlace, initialPaginationPlaces };
   }
 };
 </script>

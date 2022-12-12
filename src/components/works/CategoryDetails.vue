@@ -54,7 +54,7 @@
     <q-table
       title="Categorías relacionadas"
       :rows="info.related_cats"
-      :pagination="initialPagination"
+      :pagination="initialPaginationCategories"
     >
     </q-table>
   </div>
@@ -79,8 +79,8 @@ import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
 import {
   columnsCatsAuthorById,
-  initialPagination
-} from '../../assets/columnsvariables';
+  initialPaginationCategories
+} from '../../assets/columnsnames';
 
 const props = defineProps({
   category_id: Number

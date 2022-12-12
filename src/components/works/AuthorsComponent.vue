@@ -1,15 +1,13 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
-    <q-table
-      title="Autores"
-      :rows="datos"
-      :columns="columnsAuthorsAll"
-      :pagination="initialPagination"
-      row-key="person_id"
-      @row-click="onRowClicked"
-    >
-    </q-table>
-  </div>
+  <q-table
+    title="Autores"
+    :rows="datos"
+    :columns="columnsAuthorsAll"
+    :pagination="initialPaginationAuthors"
+    row-key="person_id"
+    @row-click="onRowClicked"
+  >
+  </q-table>
 </template>
 
 <script>
@@ -19,8 +17,8 @@ import { works } from 'boot/axios';
 import { useAuthorStore } from '../../stores/authorStore';
 import {
   columnsAuthorsAll,
-  initialPagination
-} from '../../assets/columnsvariables';
+  initialPaginationAuthors
+} from '../../assets/columnsnames';
 import { createSlug } from '../../utils/createSlug';
 
 export default defineComponent({
@@ -48,7 +46,7 @@ export default defineComponent({
     return {
       datos,
       columnsAuthorsAll,
-      initialPagination,
+      initialPaginationAuthors,
       onRowClicked
     };
   }

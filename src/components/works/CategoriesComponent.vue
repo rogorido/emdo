@@ -4,7 +4,7 @@
       title="Categories"
       :rows="datos"
       :columns="columnsCategoriesAll"
-      :pagination="initialPagination"
+      :pagination="initialPaginationCategories"
       row-key="theme_id"
       @row-click="onRowClicked"
     >
@@ -19,8 +19,8 @@ import { useCategoryStore } from '../../stores/categoryStore';
 import { works } from 'boot/axios';
 import {
   columnsCategoriesAll,
-  initialPagination
-} from '../../assets/columnsvariables';
+  initialPaginationCategories
+} from '../../assets/columnsnames';
 import { createSlug } from '../../utils/createSlug';
 
 export default defineComponent({
@@ -44,7 +44,7 @@ export default defineComponent({
     return {
       datos,
       columnsCategoriesAll,
-      initialPagination,
+      initialPaginationCategories,
       onRowClicked
     };
   }
