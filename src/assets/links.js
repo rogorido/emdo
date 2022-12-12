@@ -51,3 +51,26 @@ export const workslinks = [
     link: '/works/works'
   }
 ];
+
+export const houseslinks = [
+  {
+    title: 'Houses',
+    caption: 'Where were the  Dominican houses?',
+    link: '/houses/houses'
+  },
+  {
+    title: 'Problems',
+    caption: 'Methodological problems',
+    link: '/houses/problems'
+  },
+  {
+    title: 'Provinces',
+    caption: 'What did the Dominicans write about?',
+    link: '/houses/provinces'
+  },
+  {
+    title: 'Info',
+    caption: 'Where come the data from?',
+    link: '/houses/info'
+  }
+];

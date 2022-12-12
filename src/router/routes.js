@@ -73,6 +73,32 @@ const routes = [
       }
     ]
   },
+  {
+    path: '/',
+    component: () => import('layouts/HousesDatabaseLayout.vue'),
+    children: [
+      {
+        path: '/houses/houses',
+        name: 'houseslist',
+        component: () => import('pages/houses/HousesListPage.vue')
+      },
+      {
+        path: '/houses/problems',
+        name: 'housesproblems',
+        component: () => import('pages/houses/HousesProblemsPage.vue')
+      },
+      {
+        path: '/houses/info',
+        name: 'housesinfo',
+        component: () => import('pages/houses/HousesInfoPage.vue')
+      },
+      {
+        path: '/houses/provinces',
+        name: 'provincesinfo',
+        component: () => import('pages/houses/HousesProvincesPage.vue')
+      }
+    ]
+  },
   // Always leave this as last one,
   // but you can also remove it
   {
