@@ -72,7 +72,10 @@ module.exports = configure(function (ctx) {
       env: {
         APIWORKS: ctx.dev
           ? 'http://localhost:8009'
-          : 'https://api.georeligion.org/works'
+          : 'https://api.georeligion.org/works',
+        APIHOUSES: ctx.dev
+          ? 'http://localhost:8007'
+          : 'https://api.georeligion.org/houses'
       }
       // rawDefine: {}
       // ignorePublicFolder: true,

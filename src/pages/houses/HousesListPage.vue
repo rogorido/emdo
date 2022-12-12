@@ -37,16 +37,17 @@
     <li>la población en miles en 1500 (en los casos en los que hay datos)</li>
     <li>la existencia de una univesidad en 1450 en la localidad</li>
   </ul>
-  <!-- <HousesTable /> -->
-  <!--
+
   <Suspense>
     <template #default>
-      <PlacesList />
+      <HousesTableList />
     </template>
     <template #fallback>
       <div>Loading...</div>
     </template>
-  </Suspense> -->
+  </Suspense>
 </template>
 
-<script setup></script>
+<script setup>
+import HousesTableList from '../../components/houses/HousesTable.vue';
+</script>

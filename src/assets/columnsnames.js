@@ -73,6 +73,13 @@ export const initialPaginationPlaces = {
   rowsPerPage: 20
 };
 
+export const initialPaginationHouses = {
+  sortBy: 'provincia',
+  descending: false,
+  page: 1,
+  rowsPerPage: 20
+};
+
 export const visibleColumnsPlaces = [
   'place',
   'total',
@@ -81,4 +88,58 @@ export const visibleColumnsPlaces = [
   'percoriginal',
   'totalreed',
   'percreediciones'
+];
+
+export const visibleColumnsHouses = [
+  'housename',
+  'provincia',
+  'place',
+  'country',
+  'pop1500',
+  'univ1450'
+];
+
+export const columnsHousesAll = [
+  {
+    name: 'housename',
+    label: 'House',
+    align: 'left',
+    field: 'housename',
+    sortable: true
+  },
+  {
+    name: 'province',
+    label: 'Province',
+    align: 'left',
+    field: 'provincia',
+    sortable: true
+  },
+  {
+    name: 'place',
+    label: 'Place',
+    align: 'left',
+    field: 'place',
+    sortable: true
+  },
+  {
+    name: 'country',
+    label: 'Country',
+    align: 'right',
+    field: 'country',
+    sortable: true
+  },
+  {
+    name: 'pop1500',
+    label: 'Population in 1500',
+    align: 'right',
+    field: 'pop1500',
+    sortable: true
+  },
+  {
+    name: 'univ1450',
+    label: 'Univ. in 1450',
+    align: 'right',
+    field: 'univ1450',
+    sortable: true
+  }
 ];
