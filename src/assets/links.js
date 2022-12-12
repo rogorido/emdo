@@ -28,3 +28,26 @@ export const linksList = [
     link: '/contact'
   }
 ];
+
+export const workslinks = [
+  {
+    title: 'Places',
+    caption: 'Where did Dominican publish?',
+    link: '/works/places'
+  },
+  {
+    title: 'Authors',
+    caption: 'Who were the Dominican authors?',
+    link: '/works/authors'
+  },
+  {
+    title: 'Categories',
+    caption: 'What did the Dominicans write about?',
+    link: '/works/categories'
+  },
+  {
+    title: 'Works',
+    caption: 'Filter works using many criteria',
+    link: '/works/works'
+  }
+];

@@ -34,7 +34,13 @@ const routes = [
       {
         path: '/worksdb',
         component: () => import('pages/works/WorksMainPage.vue')
-      },
+      }
+    ]
+  },
+  {
+    path: '/',
+    component: () => import('layouts/DatabaseLayout.vue'),
+    children: [
       {
         path: '/works/places',
         name: 'placeslist',
