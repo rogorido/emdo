@@ -7,9 +7,8 @@ import axios from 'axios';
 // good idea to move this instance creation inside of the
 // "export default () => {}" function below (which runs individually
 // for each client)
-//const works = axios.create({ baseURL: 'http://localhost:8009' });
-const works = axios.create({ baseURL: process.env.APIWORKS });
-const houses = axios.create({ baseURL: process.env.APIHOUSES });
+
+const api = axios.create({ baseURL: process.env.API });
 //const resolutions = axios.create({ baseURL: 'http://localhost:8009' });
 
 export default boot(({ app }) => {
@@ -19,11 +18,11 @@ export default boot(({ app }) => {
   // ^ ^ ^ this will allow you to use this.$axios (for Vue Options API form)
   //       so you won't necessarily have to import axios in each vue file
 
-  app.config.globalProperties.$api = works;
-  app.config.globalProperties.$api = houses;
+  app.config.globalProperties.$api = api;
+  // app.config.globalProperties.$api = houses;
   // ^ ^ ^ this will allow you to use this.$api (for Vue Options API form)
   //       so you can easily perform requests against your app's API
 });
 
 // export { works, resolutions };
-export { works, houses };
+export { api };

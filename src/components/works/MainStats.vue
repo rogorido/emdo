@@ -74,7 +74,7 @@
 
 <script>
 import { defineComponent, ref } from 'vue';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 
 const columnsLanguages = [
   {
@@ -108,8 +108,8 @@ export default defineComponent({
   async setup() {
     const datos = ref([]);
 
-    const probar = await works.get('/statistics/general/');
-    datos.value = probar.data;
+    const response = await api.get('/works/statistics/general/');
+    datos.value = response.data;
 
     return { datos, columnsLanguages, initialPagination };
   }

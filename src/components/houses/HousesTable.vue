@@ -14,7 +14,7 @@
 
 <script>
 import { ref } from 'vue';
-import { houses } from 'boot/axios';
+import { api } from 'boot/axios';
 
 import {
   columnsHousesAll,
@@ -27,7 +27,7 @@ export default {
   async setup() {
     const datos = ref([]);
 
-    const houseslist = await houses.get('/houses/');
+    const houseslist = await api.get('/houses/houses/');
     datos.value = houseslist.data;
 
     return {

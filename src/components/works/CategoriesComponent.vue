@@ -16,7 +16,7 @@
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { useCategoryStore } from '../../stores/categoryStore';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import {
   columnsCategoriesAll,
   initialPaginationCategories
@@ -38,7 +38,7 @@ export default defineComponent({
       router.push(`/works/categories/${slug}`);
     };
 
-    const categories = await works.get('/categories/');
+    const categories = await api.get('/works/categories/');
     datos.value = categories.data;
 
     return {

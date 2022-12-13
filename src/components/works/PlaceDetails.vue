@@ -68,7 +68,7 @@
 
 <script>
 import { ref, onMounted } from 'vue';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import L from 'leaflet';
 import {
   columnsCatsAuthorById,
@@ -100,7 +100,7 @@ export default {
     });
     const loadPlace = async () => {
       try {
-        const response = await works.get(`/places/${props.place_id}`);
+        const response = await api.get(`/works/places/${props.place_id}`);
         info.value = response.data;
         console.log(info.value);
         const { coords } = info.value;

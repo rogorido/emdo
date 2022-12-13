@@ -1,5 +1,6 @@
 <template>
   <q-table
+    wrap-cells
     title="Autores"
     :rows="datos"
     :columns="columnsAuthorsAll"
@@ -13,7 +14,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import { useAuthorStore } from '../../stores/authorStore';
 import {
   columnsAuthorsAll,
@@ -40,7 +41,7 @@ export default defineComponent({
       });
     };
 
-    const authorsall = await works.get('/authors/');
+    const authorsall = await api.get('/works/authors/');
     datos.value = authorsall.data;
 
     return {

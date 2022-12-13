@@ -14,7 +14,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import { usePlaceStore } from '../../stores/placesStore';
 import {
   columnsPlacesAll,
@@ -41,7 +41,7 @@ export default defineComponent({
       });
     };
 
-    const places = await works.get('/places/');
+    const places = await api.get('/works/places/');
     datos.value = places.data;
 
     return {

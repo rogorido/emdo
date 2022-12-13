@@ -74,7 +74,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import AuthorItem from './AuthorItem.vue';
 import DecadesChart from './CategoriesDecadesChart.vue';
 import {
@@ -90,7 +90,7 @@ const info = ref();
 
 const loadCategory = async () => {
   try {
-    const response = await works.get(`/categories/${props.category_id}`);
+    const response = await api.get(`/works/categories/${props.category_id}`);
     info.value = response.data;
   } catch (err) {
     console.log('este es el error', err);

@@ -34,7 +34,7 @@
 <script>
 import { defineComponent, ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
-import { works } from 'boot/axios';
+import { api } from 'boot/axios';
 import {
   columnsCatsAuthorById,
   initialPaginationAuthors
@@ -55,7 +55,7 @@ export default defineComponent({
     // veces más fácil
     watchEffect(async () => {
       if (props.author_id != null) {
-        const response = await works.get(`/authors/${props.author_id}`);
+        const response = await api.get(`/works/authors/${props.author_id}`);
         info.value = response.data;
       }
     });
