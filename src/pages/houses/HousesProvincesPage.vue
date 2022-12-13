@@ -22,5 +22,16 @@
     de las informaciones aquí reseñadas.
   </p>
   <h5>Las provincias: número de casas dominicas</h5>
-  <!-- <ProvincesStatsTable /> -->
+  <Suspense>
+    <template #default>
+      <HousesProvincesTable />
+    </template>
+    <template #fallback>
+      <div>Loading...</div>
+    </template>
+  </Suspense>
 </template>
+
+<script setup>
+import HousesProvincesTable from 'components/houses/HousesProvincesTable.vue';
+</script>

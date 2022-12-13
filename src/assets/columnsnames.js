@@ -80,6 +80,13 @@ export const initialPaginationHouses = {
   rowsPerPage: 20
 };
 
+export const initialPaginationHousesProvinces = {
+  sortBy: 'total',
+  descending: true,
+  page: 1,
+  rowsPerPage: 20
+};
+
 export const initialPaginationCategories = {
   sortBy: 'total',
   descending: true,
@@ -273,3 +280,29 @@ export const columnsCategoriesAll = [
     sortable: true
   }
 ];
+
+export const columnsHousesProvincesAll = [
+  {
+    name: 'province_id',
+    align: 'left',
+    field: 'province_id'
+  },
+  {
+    name: 'province_name',
+    label: 'Province',
+    required: true,
+    align: 'left',
+    field: 'province_name',
+    sortable: true
+  },
+  {
+    name: 'total',
+    label: 'Total',
+    required: true,
+    align: 'right',
+    field: 'total',
+    sortable: true
+  }
+];
+
+export const visibleColumnsHousesProvinces = ['province_nem', 'total'];
