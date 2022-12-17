@@ -2,6 +2,16 @@
   <q-footer elevated>
     <div class="row justify-evenly q-pb-md">
       <div class="footer-col">
+        <p>
+          This site is part of my site <br /><a
+            target="_blank"
+            class="text-primary"
+            href="https://www.georeligion.org"
+            >https://www.georeligion.org</a
+          >
+        </p>
+      </div>
+      <div class="footer-col">
         <q-img
           class="q-hoverable cursor-pointer"
           src="~assets/svg/logo-emdo.svg"
@@ -10,16 +20,6 @@
         <p>
           <em>Created by</em>
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
-        </p>
-      </div>
-      <div class="footer-col">
-        <p>
-          This site is part of my site <br /><a
-            target="_blank"
-            class="text-primary"
-            href="https://www.georeligion.org"
-            >https://www.georeligion.org</a
-          >
         </p>
       </div>
       <div class="footer-col">
