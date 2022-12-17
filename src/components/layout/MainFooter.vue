@@ -51,7 +51,6 @@
 import SocialLinks from 'components/SocialLinks.vue';
 import { defineComponent, ref } from 'vue';
 import { api } from 'boot/axios';
-import { getActivePinia } from 'pinia';
 
 export default defineComponent({
   name: 'MainFooter',
