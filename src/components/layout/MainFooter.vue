@@ -1,6 +1,6 @@
 <template>
   <q-footer elevated>
-    <div class="row justify-around q-pb-md">
+    <div class="row justify-evenly q-pb-md">
       <div class="footer-col">
         <q-img
           class="q-hoverable cursor-pointer"
@@ -11,7 +11,6 @@
           <em>Created by</em>
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
         </p>
-        <p>Copyright 2019-{{ new Date().getFullYear() }}</p>
       </div>
       <div class="footer-col">
         <p>
@@ -28,6 +27,9 @@
       </div>
     </div>
     <div class="row justify-evenly">
+      <div class="footer-col">
+        <p>Copyright 2019-{{ new Date().getFullYear() }}</p>
+      </div>
       <div class="footer-col">API version: {{ apiversion }}</div>
       <div class="footer-col">
         <p>
