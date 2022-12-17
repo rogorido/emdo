@@ -17,7 +17,11 @@
         <MainPageScroller />
       </q-page>
     </q-page-container>
-    <MainFooter />
+    <Suspense>
+      <template #default>
+        <MainFooter />
+      </template>
+    </Suspense>
   </q-layout>
 </template>
 

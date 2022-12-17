@@ -27,7 +27,8 @@
         <SocialLinks />
       </div>
     </div>
-    <div class="row justify-around">
+    <div class="row justify-evenly">
+      <div class="footer-col">API version: {{ apiversion }}</div>
       <div class="footer-col">
         <p>
           This site was created with
@@ -44,8 +45,27 @@
   </q-footer>
 </template>
 
-<script setup>
+<script>
 import SocialLinks from 'components/SocialLinks.vue';
+import { defineComponent, ref } from 'vue';
+import { api } from 'boot/axios';
+import { getActivePinia } from 'pinia';
+
+export default defineComponent({
+  name: 'MainFooter',
+  components: { SocialLinks },
+  async setup() {
+    const apiversion = ref();
+    try {
+      const response = await api.get('/');
+      apiversion.value = response.data.version;
+    } catch (err) {
+      console.log(err);
+    }
+
+    return { apiversion };
+  }
+});
 </script>
 
 <style lang="scss" scoped>
