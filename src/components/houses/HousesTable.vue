@@ -15,6 +15,7 @@
 <script>
 import { ref } from 'vue';
 import { api } from 'boot/axios';
+import { useQuasar } from 'quasar';
 
 import {
   columnsHousesAll,
@@ -26,9 +27,17 @@ export default {
   name: 'HousesTable',
   async setup() {
     const datos = ref([]);
+    const $q = useQuasar();
 
-    const houseslist = await api.get('/houses/houses/');
-    datos.value = houseslist.data;
+    try {
+      const houseslist = await api.get('/houses/houses/');
+      datos.value = houseslist.data;
+    } catch (err) {
+      console.log(err);
+      $q.notify({
+        message: 'An error has occurred. Load the page again!'
+      });
+    }
 
     return {
       datos,

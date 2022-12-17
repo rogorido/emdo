@@ -15,6 +15,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useQuasar } from 'quasar';
 import { useCategoryStore } from '../../stores/categoryStore';
 import { api } from 'boot/axios';
 import {
@@ -28,6 +29,7 @@ export default defineComponent({
 
   async setup() {
     const datos = ref([]);
+    const $q = useQuasar();
 
     const router = useRouter();
     const store = useCategoryStore();
@@ -38,8 +40,15 @@ export default defineComponent({
       router.push(`/works/categories/${slug}`);
     };
 
-    const categories = await api.get('/works/categories/');
-    datos.value = categories.data;
+    try {
+      const categories = await api.get('/works/categories/');
+      datos.value = categories.data;
+    } catch (err) {
+      console.log(err);
+      $q.notify({
+        message: 'An error has occurred. Load the page again!'
+      });
+    }
 
     return {
       datos,

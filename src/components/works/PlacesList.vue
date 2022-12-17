@@ -15,6 +15,7 @@
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { api } from 'boot/axios';
+import { useQuasar } from 'quasar';
 import { usePlaceStore } from '../../stores/placesStore';
 import {
   columnsPlacesAll,
@@ -28,6 +29,7 @@ export default defineComponent({
 
   async setup() {
     const datos = ref([]);
+    const $q = useQuasar();
 
     const store = usePlaceStore();
     const router = useRouter();
@@ -41,8 +43,15 @@ export default defineComponent({
       });
     };
 
-    const places = await api.get('/works/places/');
-    datos.value = places.data;
+    try {
+      const places = await api.get('/works/places/');
+      datos.value = places.data;
+    } catch (err) {
+      console.log(err);
+      $q.notify({
+        message: 'An error has occurred. Load the page again!'
+      });
+    }
 
     return {
       datos,

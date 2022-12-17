@@ -75,6 +75,7 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import { api } from 'boot/axios';
+import { useQuasar } from 'quasar';
 
 const columnsLanguages = [
   {
@@ -107,9 +108,17 @@ export default defineComponent({
 
   async setup() {
     const datos = ref([]);
+    const $q = useQuasar();
 
-    const response = await api.get('/works/statistics/general/');
-    datos.value = response.data;
+    try {
+      const response = await api.get('/works/statistics/general/');
+      datos.value = response.data;
+    } catch (err) {
+      console.log(err);
+      $q.notify({
+        message: 'An error has occurred. Load the page again!'
+      });
+    }
 
     return { datos, columnsLanguages, initialPagination };
   }

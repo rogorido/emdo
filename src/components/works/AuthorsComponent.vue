@@ -15,6 +15,7 @@
 import { defineComponent, ref } from 'vue';
 import { useRouter } from 'vue-router';
 import { api } from 'boot/axios';
+import { useQuasar } from 'quasar';
 import { useAuthorStore } from '../../stores/authorStore';
 import {
   columnsAuthorsAll,
@@ -27,6 +28,7 @@ export default defineComponent({
 
   async setup() {
     const datos = ref([]);
+    const $q = useQuasar();
 
     const router = useRouter();
     const store = useAuthorStore();
@@ -41,8 +43,15 @@ export default defineComponent({
       });
     };
 
-    const authorsall = await api.get('/works/authors/');
-    datos.value = authorsall.data;
+    try {
+      const authorsall = await api.get('/works/authors/');
+      datos.value = authorsall.data;
+    } catch (err) {
+      console.log(err);
+      $q.notify({
+        message: 'An error has occurred. Load the page again!'
+      });
+    }
 
     return {
       datos,

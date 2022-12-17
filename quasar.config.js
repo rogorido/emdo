@@ -71,8 +71,8 @@ module.exports = configure(function (ctx) {
       // analyze: true,
       env: {
         API: ctx.dev
-          ? 'http://localhost:8009'
-          : 'https://api.georeligion.org/works'
+          ? 'http://localhost:8001'
+          : 'https://api.georeligion.org/dominicans'
       }
       // rawDefine: {}
       // ignorePublicFolder: true,
@@ -107,7 +107,7 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: ['Notify']
     },
 
     // animations: 'all', // --- includes all animations
