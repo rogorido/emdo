@@ -1,13 +1,13 @@
 {
   "name": "webpreachers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A web about the Preachers Order in early modern times",
   "productName": "WebPreachers",
   "author": "Igor Sosa Mayor <joseleopoldo1792@gmail.com>",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",
-    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore"
   },
   "dependencies": {
     "@quasar/extras": "^1.15.8",
