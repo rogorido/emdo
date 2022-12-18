@@ -83,7 +83,7 @@
 
     <div
       class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-x-lg"
-      @click="goToSite('/resolutions')"
+      @click="goToSite('/chapters')"
     >
       <div class="col imageshown">
         <q-img

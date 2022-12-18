@@ -13,11 +13,6 @@ const routes = [
         component: () => import('pages/OurSectionsPage.vue')
       },
       { path: '/bishops', component: () => import('pages/BishopsPage.vue') },
-      {
-        path: '/resolutions',
-        component: () => import('pages/ResolutionsPage.vue')
-      },
-      { path: '/houses', component: () => import('pages/HousesPage.vue') },
 
       { path: '/about', component: () => import('pages/AboutPage.vue') },
       { path: '/contact', component: () => import('pages/ContactPage.vue') },
@@ -78,6 +73,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/HousesDatabaseLayout.vue'),
     children: [
+      { path: '/houses', component: () => import('pages/HousesPage.vue') },
       {
         path: '/houses/houses',
         name: 'houseslist',
@@ -97,6 +93,17 @@ const routes = [
         path: '/houses/provinces',
         name: 'provincesinfo',
         component: () => import('pages/houses/HousesProvincesPage.vue')
+      }
+    ]
+  },
+  {
+    path: '/',
+    component: () => import('layouts/ChaptersDbLayout.vue'),
+    children: [
+      { path: '/chapters', component: () => import('pages/ChaptersPage.vue') },
+      {
+        path: '/chapters/generalchapters',
+        component: () => import('pages/chapters/GeneralChapters.vue')
       }
     ]
   },

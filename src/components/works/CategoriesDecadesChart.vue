@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { createDataChart } from '../../utils/createDataChart';
+import { createWorksCategoriesData } from '../../utils/createDataChart';
 import { Bar } from 'vue-chartjs';
 import {
   Chart as ChartJS,
@@ -26,5 +26,5 @@ ChartJS.register(
 
 const props = defineProps({ decades: Array });
 
-const chartData = createDataChart(props.decades);
+const chartData = createWorksCategoriesData(props.decades);
 </script>

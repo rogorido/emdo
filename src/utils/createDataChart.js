@@ -1,4 +1,4 @@
-export const createDataChart = (datos) => {
+export const createWorksCategoriesData = (datos) => {
   const etiquetas = datos.map((valor) => valor.r_from);
 
   // esto pbb se puede simplicar pero ahora no sé cómo
@@ -33,4 +33,20 @@ export const createDataChart = (datos) => {
   return chartData;
 };
 
-//module.exports = { createDataChart };
+export const createChaptersDecadesData = (data) => {
+  const labels = data.map((value) => value.decada);
+  const d_total = data.map((value) => +value.total);
+
+  const totals = {
+    label: 'Total',
+    backgroundColor: '#f87979',
+    data: d_total
+  };
+
+  const chartData = {
+    labels,
+    datasets: [totals]
+  };
+
+  return chartData;
+};
