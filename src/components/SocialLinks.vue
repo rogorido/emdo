@@ -37,6 +37,15 @@
     >
       <q-img src="~assets/svg/mastodon.svg" width="32px" height="32px"></q-img>
     </a>
+
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://orcid.org/0000-0003-3645-8454"
+      aria-label="ORCID ID"
+    >
+      <q-img src="~assets/svg/ORCID_iD.svg" width="32px" height="32px"></q-img>
+    </a>
   </div>
 </template>
 
