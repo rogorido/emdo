@@ -30,7 +30,14 @@
       <div class="footer-col">
         <p>Copyright 2019-{{ new Date().getFullYear() }}</p>
       </div>
-      <div class="footer-col">API version: {{ apiversion }}</div>
+      <div class="footer-col">
+        <a
+          href="https://www.github.com/rogorido/apidominicans/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >API version</a
+        >: {{ apiversion }}
+      </div>
       <div class="footer-col">
         <p>
           This site was created with
