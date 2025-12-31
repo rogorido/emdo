@@ -9,7 +9,7 @@ It uses for the analysis of the data the Application Programming
 Interface (API) developed by me and whose [code is accessible
 here](https://github/rogorido/apidominicans).
 
-
+![Web domicans](./webdominicans2.webp)
 
 This code has been written in the framework of the research project on
 **Religious globalisation as challenge. Global governance, geopolitics
