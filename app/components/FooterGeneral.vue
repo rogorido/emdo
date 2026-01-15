@@ -24,9 +24,9 @@
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
         </p>
       </div>
-      <div class="footer-col">
+      <!-- <div class="footer-col">
         <SocialLinks />
-      </div>
+      </div> -->
     </div>
     <div class="row justify-evenly">
       <div class="footer-col">
@@ -38,7 +38,7 @@
           target="_blank"
           rel="noopener noreferrer"
           >API version</a
-        >: {{ apiversion }}
+        >: 12
       </div>
       <div class="footer-col">
         <p>
