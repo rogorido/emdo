@@ -78,12 +78,8 @@
 </template>
 
 <script setup>
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-
 const goToSite = (site) => {
-  router.push(site);
+  return navigateTo({ path: site });
 };
 </script>
 
