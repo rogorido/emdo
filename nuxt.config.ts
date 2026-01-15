@@ -6,7 +6,11 @@ const isProdEnv = process.env.NODE_ENV === 'production';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@primevue/nuxt-module', '@nuxt/fonts'],
+  modules: [
+    '@primevue/nuxt-module',
+    '@nuxt/fonts',
+    '@nuxtjs/sitemap'
+  ],
 
   primevue: { options: { theme: { preset: Aura } } },
 
