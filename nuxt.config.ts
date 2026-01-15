@@ -9,7 +9,8 @@ export default defineNuxtConfig({
   modules: [
     '@primevue/nuxt-module',
     '@nuxt/fonts',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
 
   primevue: { options: { theme: { preset: Aura } } },

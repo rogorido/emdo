@@ -1,6 +1,6 @@
 {
   "name": "webpreachers",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "description": "A web about the Preachers Order in early modern times",
   "productName": "WebPreachers",
   "author": "Igor Sosa Mayor <joseleopoldo1792@gmail.com>",
@@ -15,6 +15,7 @@
   "private": true,
   "dependencies": {
     "@nuxt/fonts": "^0.12.1",
+    "@nuxtjs/robots": "^5.6.7",
     "@nuxtjs/sitemap": "^7.5.2",
     "@primeuix/themes": "^2.0.2",
     "@quasar/extras": "^1.16.8",
