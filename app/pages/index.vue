@@ -22,6 +22,7 @@
   </div>
 
   <GeneralDescription />
+  <ScrollTop target="window" :threshold="100" icon="pi pi-arrow-up" />
 </template>
 
 <script setup>
