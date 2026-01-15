@@ -1,0 +1,77 @@
+// See here:
+// https://nuxt.com/docs/4.x/getting-started/styling#using-postcss
+
+// original
+//$primary: #cc0d12;
+$secondary: #414156;
+$accent: #9c27b0;
+
+$dark: #1d1d1d;
+$dark-page: #121212;
+
+$positive: #21ba45;
+$negative: #c10015;
+$info: #31ccec;
+$warning: #f2c037;
+$white: #fff;
+
+$body-font-size: 18px !default;
+//$body-font-size: 1rem !default;
+//$body-font-size: 100% !default;
+
+//nueva paleta
+// https://www.colorhexa.com/3e7800
+//$primary: #3e7800;
+$primary: #167800;
+$primary-complementary: #3a0078; //rgb(58,0,120)
+$triadic-1: #003e78;
+$triadic-2: #78003e;
+
+// $link-hover-color: lighten($primary, 10%) !default;
+// $footer-color: lighten($primary, 40%) !default;
+
+// posible paleta
+$color-1: #28b463;
+$color-2: #daf7a6;
+$color-3: #ffc300;
+$color-4: #ff5733;
+$color-5: #c70039;
+$color-6: #900c3f;
+
+// otra:
+$color1: #fc9f5b; // sandy brown
+$color2: #fbd1a2; // deep champagne
+$color3: #ece4b7; // lemon maringue
+$color4: #7dcfb6; // middle blue green
+$color5: #33ca7f; // emerald
+
+// una buena es esta:
+// https://colorhunt.co/palette/aa2b1dcc561eef8d32beca5c
+// color1: #AA2B1D;
+// color2: #CC561E;
+// color3: #EF8D32;
+// color4: #BECA5C;
+
+html {
+  font-family: Merriweather, sans-serif;
+  line-height: 1.5;
+}
+
+.textlinks {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 2px solid $primary;
+  box-shadow: inset 0 -2px 0 $primary;
+  background: 0 0;
+  transition: background 150ms ease;
+
+  &:focus,
+  &:hover {
+    background: $primary;
+  }
+}
+
+.my-primary {
+  color: $primary;
+}

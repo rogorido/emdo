@@ -16,7 +16,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase text-primary">
+          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
             Houses
           </h5>
           <p>
@@ -42,7 +42,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase text-primary">
+          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
             Bishops
           </h5>
           <p>
@@ -69,7 +69,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase text-primary">
+          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
             Chapters
           </h5>
           <p>
@@ -96,7 +96,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase text-primary">
+          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
             Resolutions
           </h5>
           <p>
@@ -122,7 +122,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase text-primary">
+          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
             Works
           </h5>
           <p>

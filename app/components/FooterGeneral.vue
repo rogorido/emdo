@@ -6,7 +6,7 @@
         <p>
           This site is part of my site <br /><a
             target="_blank"
-            class="text-primary"
+            class="my-primary"
             href="https://www.georeligion.org"
             >https://www.georeligion.org</a
           >

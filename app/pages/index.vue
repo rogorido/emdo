@@ -3,7 +3,7 @@
     <div class="text-h4 q-pa-xl">
       <em class="suave"
         >The most comprehensive webpage devoted to the
-        <span class="text-primary">Dominican Order</span> in the early modern
+        <span class="my-primary">Dominican Order</span> in the early modern
         period.</em
       >
     </div>

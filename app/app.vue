@@ -13,10 +13,3 @@ import 'primeflex/primeflex.css';
 import '@/assets/normalize.css';
 import '@/assets/owncontainers.css';
 </script>
-
-<style>
-html {
-  font-family: Merriweather, sans-serif;
-  line-height: 1.5;
-}
-</style>

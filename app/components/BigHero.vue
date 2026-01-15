@@ -1,6 +1,6 @@
 <template>
   <div class="hero cursor-pointer" @click="goToHome()">
-    <h2><span class="text-primary">Early Modern</span> Dominican Order</h2>
+    <h2><span class="my-primary">Early Modern</span> Dominican Order</h2>
     <div class="ownname"><em>by </em>Igor Sosa Mayor</div>
   </div>
 </template>

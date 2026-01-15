@@ -27,5 +27,6 @@ export default defineNuxtConfig({
   site: {
     url: 'https://dominicans.georeligion.org',
     name: 'Most comprehensive webpage about the Dominican Order in the early modern period'
-  }
+  },
+  css: ['~/assets/owncss.scss']
 });
