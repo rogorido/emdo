@@ -1,6 +1,15 @@
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtLoadingIndicator />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
+
+<script>
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
+import '@/assets/normalize.css';
+import '@/assets/owncontainers.css';
+</script>
