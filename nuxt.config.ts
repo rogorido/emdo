@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     '@primevue/nuxt-module',
     '@nuxt/fonts',
     '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxtjs/robots',
+    '@nuxtjs/seo'
   ],
 
   primevue: { options: { theme: { preset: Aura } } },
@@ -22,5 +23,9 @@ export default defineNuxtConfig({
         : 'http://localhost:8001',
       uiVersion: process.env.npm_package_version
     }
+  },
+  site: {
+    url: 'https://dominicans.georeligion.org',
+    name: 'Most comprehensive webpage about the Dominican Order in the early modern period'
   }
 });
