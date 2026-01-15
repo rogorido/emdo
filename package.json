@@ -1,24 +1,28 @@
 {
   "name": "webpreachers",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "A web about the Preachers Order in early modern times",
   "productName": "WebPreachers",
   "author": "Igor Sosa Mayor <joseleopoldo1792@gmail.com>",
-  "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue ./",
-    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
+  "private": true,
   "dependencies": {
     "@quasar/extras": "^1.16.8",
     "axios": "^1.6.2",
     "chart.js": "^4.4.0",
     "leaflet": "^1.9.4",
+    "nuxt": "^4.2.2",
     "pinia": "^2.1.7",
     "quasar": "^2.14.0",
-    "vue": "^3.3.9",
+    "vue": "^3.5.26",
     "vue-chartjs": "^5.2.0",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@quasar/app-vite": "^1.7.0",
@@ -28,10 +32,5 @@
     "eslint-plugin-vue": "^9.18.1",
     "postcss": "^8.4.31",
     "prettier": "^3.1.0"
-  },
-  "engines": {
-    "node": "^18 || ^16 || ^14.19",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
   }
 }
