@@ -9,8 +9,10 @@ import 'leaflet/dist/leaflet.css';
 import 'leaflet.markercluster/dist/MarkerCluster.css';
 import 'leaflet.markercluster/dist/MarkerCluster.Default.css';
 
+import chroma from 'chroma-js';
+
 import L from 'leaflet';
-import LatLngBounds from 'leaflet';
+import { LatLngBounds } from 'leaflet';
 import { markerClusterGroup } from 'leaflet.markercluster';
 
 const config = useRuntimeConfig();
@@ -34,6 +36,21 @@ onMounted(async () => {
     // https://gis.stackexchange.com/questions/301286/how-to-fit-bounds-after-adding-multiple-markers
     var bounds = L.latLngBounds();
 
+    const provincias = [...new Set(data.value.map((d) => d.provincia))];
+
+    console.log(provincias);
+
+    const colors = chroma.scale('Set2').mode('lch').colors(provincias.length);
+    const provColor = Object.fromEntries(
+      provincias.map((p, i) => [p, colors[i]])
+    );
+
+    console.log(provColor);
+    // 4. layers (con cluster)
+    const provLayers = Object.fromEntries(
+      provincias.map((p) => [p, L.markerClusterGroup()])
+    );
+
     // NOTE: I create an array to store the markers of the houses.
     // I could add every marker to L.markerClusterGroup(); with
     // markers.addLayer(circle)
@@ -44,7 +61,7 @@ onMounted(async () => {
     data.value.forEach((house) => {
       var circle = L.circle([house.latitude, house.longitude], {
         color: 'red',
-        fillColor: '#f03',
+        fillColor: provColor[house.provincia],
         fillOpacity: 0.7,
         radius: 7500
       });
@@ -53,14 +70,25 @@ onMounted(async () => {
         `<p>House: ${house.housename} <br />House id: ${house.house_id}. </p>`
       );
 
+      provLayers[house.provincia].addLayer(circle);
       housesmarkers.push(circle);
 
       bounds.extend([house.latitude, house.longitude]);
     });
-    var markers = L.markerClusterGroup();
-    markers.addLayers(housesmarkers);
+    // var markers = L.markerClusterGroup();
+    //markers.addLayers(housesmarkers);
+    //mymap.addLayer(markers);
 
-    mymap.addLayer(markers);
+    Object.values(provLayers).forEach((l) => mymap.addLayer(l));
+
+    L.control
+      .layers(
+        null,
+        Object.fromEntries(provincias.map((p) => [p, provLayers[p]])),
+        { collapsed: false }
+      )
+      .addTo(mymap);
+
     mymap.fitBounds(bounds);
 
     mymap.on('zoomend', function () {
