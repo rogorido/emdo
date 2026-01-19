@@ -38,16 +38,9 @@
     <li>la existencia de una univesidad en 1450 en la localidad</li>
   </ul>
 
-  <!-- <Suspense>
-    <template #default>
-      <HousesTableList />
-    </template>
-    <template #fallback>
-      <div>Loading...</div>
-    </template>
-  </Suspense> -->
+  <HousesTable />
 </template>
 
 <script setup>
-/* import HousesTableList from '../../components/houses/HousesTable.vue'; */
+import HousesTable from '@/components/houses/HousesTable.vue';
 </script>
