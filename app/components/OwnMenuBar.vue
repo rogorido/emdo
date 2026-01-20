@@ -75,4 +75,11 @@ const items = ref([
   z-index: 1;
   justify-content: center;
 }
+
+.p-menubar-item-link {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.0933em;
+  text-transform: uppercase;
+}
 </style>
