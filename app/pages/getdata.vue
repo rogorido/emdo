@@ -97,12 +97,6 @@
   <div class="flex flex-center"><div class="separador"></div></div>
 </template>
 
-<script>
-definePageMeta({
-  layout: 'main-page-layout'
-});
-</script>
-
 <style scoped>
 .separador {
   margin: 30px 0;

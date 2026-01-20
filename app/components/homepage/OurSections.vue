@@ -5,7 +5,7 @@
 
       <div
         class="grid oferta cursor-pointer"
-        @click="goToSite('/analysis/housesgeneral')"
+        @click="goToSite('/analysis/houses/')"
       >
         <div class="col imageshown">
           <img
@@ -29,7 +29,10 @@
         </div>
       </div>
 
-      <div class="grid oferta cursor-pointer" @click="goToSite('/bishops')">
+      <div
+        class="grid oferta cursor-pointer"
+        @click="goToSite('/analysis/bishops/')"
+      >
         <div class="col imageshown">
           <img
             src="@/assets/images/bishops.webp"
@@ -53,7 +56,10 @@
         </div>
       </div>
 
-      <div class="grid oferta cursor-pointer" @click="goToSite('/chapters')">
+      <div
+        class="grid oferta cursor-pointer"
+        @click="goToSite('/analysis/chapters/')"
+      >
         <div class="col imageshown">
           <img
             src="@/assets/images/acta4-r.avif"
@@ -77,7 +83,10 @@
         </div>
       </div>
 
-      <div class="grid oferta cursor-pointer" @click="goToSite('/chapters')">
+      <div
+        class="grid oferta cursor-pointer"
+        @click="goToSite('/analysis/chaptersresolutions')"
+      >
         <div class="col imageshown">
           <img
             src="@/assets/images/cagayan.webp"
@@ -100,7 +109,10 @@
         </div>
       </div>
 
-      <div class="grid oferta cursor-pointer" @click="goToSite('/works')">
+      <div
+        class="grid oferta cursor-pointer"
+        @click="goToSite('/analysis/works/')"
+      >
         <div class="col imageshown">
           <img
             src="~assets/images/tratado-colores.avif"

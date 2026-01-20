@@ -1,7 +1,7 @@
 <template>
   <div>
     <OwnMenuBar />
-    <BigHero />
+    <SmallHero />
     <div class="grid">
       <div class="col-3">
         <LayoutLeftColumnDatabase />

@@ -1,5 +1,5 @@
 <template>
-  <h3 class="text-center">Contact</h3>
+  <h2 class="text-center">Contact</h2>
   <p>These pages are written, designed and maintained by Igor Sosa Mayor.</p>
   <p>
     I have a degree in German Philology from the
@@ -67,12 +67,6 @@
   </p>
   <div class="flex flex-center"><div class="separador"></div></div>
 </template>
-
-<script>
-definePageMeta({
-  layout: 'main-page-layout'
-});
-</script>
 
 <style lang="scss" scoped>
 .separador {
