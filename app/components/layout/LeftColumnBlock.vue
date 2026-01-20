@@ -1,7 +1,14 @@
 <template>
-  <div class="p-7">
-    <LayoutLeftColumnBlock />
+  <div class="flex flex-center">
+    <img
+      class="cursor-pointer"
+      @click="goToHome"
+      src="~assets/svg/logo-emdo.svg"
+      width="300px"
+    />
   </div>
+  <p class="ownname">Igor Sosa Mayor</p>
+  <LayoutSocialLinks />
 </template>
 
 <script setup>
