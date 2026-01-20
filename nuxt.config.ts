@@ -37,4 +37,13 @@ export default defineNuxtConfig({
     '@/assets/owncss.scss',
     '@/assets/owncontainers.css'
   ]
+
+  // it does not work yet...
+  // https://www.answeroverflow.com/m/1359934022888980520
+  // routeRules: {
+  //   // Set layout for specific route
+  //   //'/admin': { appLayout: 'admin' },
+  //   // Set layout for multiple routes
+  //   '/analysis/**': { appLayout: 'houses-layout' }
+  // }
 });
