@@ -97,7 +97,13 @@
   <div class="flex flex-center"><div class="separador"></div></div>
 </template>
 
-<style lang="scss" scoped>
+<script>
+definePageMeta({
+  layout: 'main-page-layout'
+});
+</script>
+
+<style scoped>
 .separador {
   margin: 30px 0;
   background-image: url('../assets/svg/pattern_05.svg');

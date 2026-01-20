@@ -77,7 +77,7 @@ const items = ref([
 }
 
 .p-menubar-item-link {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.0933em;
   text-transform: uppercase;

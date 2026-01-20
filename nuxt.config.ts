@@ -29,5 +29,12 @@ export default defineNuxtConfig({
     url: 'https://dominicans.georeligion.org',
     name: 'Most comprehensive webpage about the Dominican Order in the early modern period'
   },
-  css: ['~/assets/owncss.scss']
+  // order matters! we also have in app.vue imports! they come after these here!
+  css: [
+    'primeicons/primeicons.css',
+    'primeflex/primeflex.css',
+    '@/assets/normalize.css',
+    '@/assets/owncss.scss',
+    '@/assets/owncontainers.css'
+  ]
 });

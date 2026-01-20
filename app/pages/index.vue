@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-h4 q-pa-xl">
+    <div class="text-h4 p-3">
       <em class="suave"
         >The most comprehensive webpage devoted to the
         <span class="my-primary">Dominican Order</span> in the early modern
@@ -39,10 +39,11 @@ import GeneralDescription from '@/components/homepage/GeneralDescription.vue';
 
 <style lang="scss" scoped>
 .intro p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .suave {
+  font-size: 1.8rem;
   opacity: 0.75;
 }
 </style>

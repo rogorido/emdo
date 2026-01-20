@@ -1,10 +1,10 @@
 <template>
   <div>
     <section>
-      <h4 class="text-center">Main sections</h4>
+      <h2 class="text-center">Main sections</h2>
 
       <div
-        class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-lg"
+        class="grid oferta cursor-pointer"
         @click="goToSite('/analysis/housesgeneral')"
       >
         <div class="col imageshown">
@@ -16,9 +16,9 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
             Houses
-          </h5>
+          </h3>
           <p>
             La Orden de Predicadores llegará a tener unas 1200 casas repartidas
             a lo largo y ancho del globo. Su presencia global será una de sus
@@ -29,10 +29,7 @@
         </div>
       </div>
 
-      <div
-        class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-x-lg"
-        @click="goToSite('/bishops')"
-      >
+      <div class="grid oferta cursor-pointer" @click="goToSite('/bishops')">
         <div class="col imageshown">
           <img
             src="@/assets/images/bishops.webp"
@@ -42,9 +39,9 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
             Bishops
-          </h5>
+          </h3>
           <p>
             Durante la Edad Moderna los miembros de la Orden de Predicadores
             estuvieron presentes a lo largo de todo el globo en calidad de
@@ -56,10 +53,7 @@
         </div>
       </div>
 
-      <div
-        class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-x-lg"
-        @click="goToSite('/chapters')"
-      >
+      <div class="grid oferta cursor-pointer" @click="goToSite('/chapters')">
         <div class="col imageshown">
           <img
             src="@/assets/images/acta4-r.avif"
@@ -69,9 +63,9 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
             Chapters
-          </h5>
+          </h3>
           <p>
             La Orden de Predicadores cuenta con una compleja organización
             territorial en la que cada unidad (convento, provincia, orden
@@ -83,10 +77,7 @@
         </div>
       </div>
 
-      <div
-        class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-x-lg"
-        @click="goToSite('/chapters')"
-      >
+      <div class="grid oferta cursor-pointer" @click="goToSite('/chapters')">
         <div class="col imageshown">
           <img
             src="@/assets/images/cagayan.webp"
@@ -96,9 +87,9 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
             Resolutions
-          </h5>
+          </h3>
           <p>
             ¿Qué decidían los dominicos en sus capítulos generales? ¿Qué temas
             eran los más frecuentados? ¿Hubo diferencias temporales a lo largo
@@ -109,10 +100,7 @@
         </div>
       </div>
 
-      <div
-        class="row q-mb-xl oferta q-hoverable cursor-pointer q-col-gutter-x-lg"
-        @click="goToSite('/works')"
-      >
+      <div class="grid oferta cursor-pointer" @click="goToSite('/works')">
         <div class="col imageshown">
           <img
             src="~assets/images/tratado-colores.avif"
@@ -122,9 +110,7 @@
           />
         </div>
         <div class="col descriptionshown">
-          <h5 class="q-mt-none q-mb-sm text-center text-uppercase my-primary">
-            Works
-          </h5>
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">Works</h3>
           <p>
             La producción intelectual de los dominicos fue en la Edad Moderna
             ingente y muy variada. Escribieron sobre los temas más variados, en
@@ -146,7 +132,7 @@ const goToSite = (site) => {
 </script>
 
 <style lang="scss" scoped>
-@media (min-width: 701px) {
+@media (min-width: 801px) {
   .oferta:nth-of-type(2n) {
     .imageshown {
       order: 2;
@@ -154,10 +140,14 @@ const goToSite = (site) => {
     .descriptionshown {
       order: 1;
     }
+
+    img {
+      height: 400px;
+    }
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .oferta {
     flex-direction: column;
     .imageshown {
@@ -165,6 +155,10 @@ const goToSite = (site) => {
     }
     .descriptionshown {
       order: 2;
+    }
+
+    img {
+      height: 200px;
     }
   }
 }
