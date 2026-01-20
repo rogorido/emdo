@@ -1,81 +1,55 @@
 <template>
   <div>
-    <h2 class="text-center">Houses</h2>
-    <h3>Casas masculinas de la Orden dominica</h3>
+    <h2 class="text-center">Chapters</h2>
     <p>
-      La Orden de Predicadores tiene una compleja estructura espacial, en la que
-      se combinan al menos tres niveles. En primer lugar el de las casas de la
-      Orden, los monasterios. Estos se agrupan, en segundo lugar, en estructuras
-      más amplias llamadas generalmente provincias o, en algunos casos,
-      congregaciones. Y todas ellas unidas constituyen la Orden de Predicadores
-      en su conjunto.
+      La Orden de Predicadores celebró con una regularidad notable a lo largo de
+      la Edad Moderna capítulos generales en los que se congregaron
+      representantes de la Orden llegados de todo el globo. A lo largo del siglo
+      XVII y en un proceso que algunos han considerado una manifestación de la
+      centralización de la Orden y el control del Maestro general, su número se
+      fue reduciendo y su frecuencia espaciando.
+    </p>
+    <p>
+      El siguiente gráfico nos muestra la frecuencia de celebraciones por
+      década:
+    </p>
+    <Suspense>
+      <template #default>
+        <GenChapsDecades />
+      </template>
+      <template #fallback>
+        <div>Loading...</div>
+      </template>
+    </Suspense>
+
+    <h2>Distribución geográfica</h2>
+    <p>
+      El <b class="marcado">lugar de celebración</b> de los capítulos generales
+      tenía una importancia georreligiosa notable. La Orden había establecido
+      que las diferentes provincias se fueran rotando en la obligación (siempre
+      gravosa económicamente, pero importante desde del punto de vista de la
+      política interna de la orden) de celebrar el capítulo general.
+    </p>
+    <p>
+      La distribución geográfica de los capítulso generales presenta así en
+      principio una gran amplitud, pues encontramos que en la Edad Moderna se
+      celebran este tipo de reuniones hasta en 17 ciudades diferentes (Roma,
+      Bolonia, Milán, Nápoles, Valladolid, Génova, Venecia, etc.). Pero al mismo
+      tiempo se percibe una clara tendencia a concentrar estas reuniones en la
+      ciudad de Roma.
+    </p>
+    <p>
+      La frecuencia por lugar durante la Edad Moderna se puede ver en el
+      siguiente gráfico:
     </p>
 
-    <p>
-      Las presentes páginas muestran una work-in-progress de la distribución
-      geográfica de las casas dominicas (masculinas) en sus dimensiones
-      globales.
-    </p>
-    <p>
-      En las siguientes páginas encontrará el interesado informaciones variadas:
-    </p>
-    <ul>
-      <li>
-        una
-        <NuxtLink to="/analysis/houses/list" class="textlinks"
-          >lista relativamente completa</NuxtLink
-        >
-        de las casas de la Orden desde una perspectiva global
-      </li>
-      <li>
-        Una estadística general sobre las de casas de las diferentes
-        <NuxtLink to="/analysis/houses/provinces" class="textlinks"
-          >provincias</NuxtLink
-        >
-        de la Orden
-      </li>
-      <li>
-        Una
-        <NuxtLink to="/analysis/houses/map" class="textlinks"
-          >visualización cartográfica</NuxtLink
-        >
-        con posibilidades de filtro sobre esa distrubución global.
-      </li>
-    </ul>
+    <ChaptersGenChapsPlaces />
 
+    <h2>Distribución geográfica: mapa</h2>
     <p>
-      Además, se puede encontrar informaciones tanto sobre las
-      <NuxtLink to="/analysis/houses/info" class="textlinks"
-        >fuentes más diversas</NuxtLink
-      >
-      usadas para extraer las informaciones presentadas. Al mismo tiempo, y de
-      forma inevitable, esas informaciones están plagadas de
-      <NuxtLink to="/analysis/houses/problems" class="textlinks"
-        >problemas y dificultades</NuxtLink
-      >.
+      La representación cartográfica de esta distribución se puede ver en el
+      siguiente mapa:
     </p>
+    <GenChapsPlacesMap />
   </div>
 </template>
-
-<script>
-definePageMeta({
-  layout: 'houses-layout'
-});
-</script>
-
-<style lang="scss" scoped>
-.text-caption {
-  font-size: 1rem;
-}
-
-.description {
-  opacity: 0.6;
-}
-
-.separador {
-  margin: 30px 0;
-  background-image: url('../assets/svg/pattern_05.svg');
-  height: 150px;
-  width: 100%;
-}
-</style>
