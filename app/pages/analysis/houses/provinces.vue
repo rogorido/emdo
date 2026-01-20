@@ -32,6 +32,8 @@
   </Suspense> -->
 </template>
 
-<script setup>
-/* import HousesProvincesTable from 'components/houses/HousesProvincesTable.vue'; */
+<script>
+definePageMeta({
+  layout: 'houses-layout'
+});
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3 class="text-center">Houses</h3>
-    <h5>Casas masculinas de la Orden dominica</h5>
+    <h2 class="text-center">Houses</h2>
+    <h3>Casas masculinas de la Orden dominica</h3>
     <p>
       La Orden de Predicadores tiene una compleja estructura espacial, en la que
       se combinan al menos tres niveles. En primer lugar el de las casas de la
@@ -56,6 +56,12 @@
     </p>
   </div>
 </template>
+
+<script>
+definePageMeta({
+  layout: 'houses-layout'
+});
+</script>
 
 <style lang="scss" scoped>
 .text-caption {

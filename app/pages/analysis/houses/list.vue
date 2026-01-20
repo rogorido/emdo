@@ -41,6 +41,8 @@
   <HousesTable />
 </template>
 
-<script setup>
-import HousesTable from '@/components/houses/HousesTable.vue';
+<script>
+definePageMeta({
+  layout: 'houses-layout'
+});
 </script>

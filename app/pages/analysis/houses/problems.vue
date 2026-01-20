@@ -48,3 +48,9 @@
     </ul>
   </div>
 </template>
+
+<script>
+definePageMeta({
+  layout: 'houses-layout'
+});
+</script>

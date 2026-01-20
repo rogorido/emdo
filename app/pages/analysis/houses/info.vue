@@ -53,3 +53,9 @@
     >)
   </p>
 </template>
+
+<script>
+definePageMeta({
+  layout: 'houses-layout'
+});
+</script>
