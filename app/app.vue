@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css';
 import '@/assets/normalize.css';

@@ -9,7 +9,7 @@
       >
         <a v-ripple :href="href" v-bind="props.action" @click="navigate">
           <span :class="item.icon" />
-          <span class="ml-2">{{ item.label }}</span>
+          <span class="ml-2 my-primary">{{ item.label }}</span>
         </a>
       </router-link>
       <a
@@ -20,7 +20,7 @@
         v-bind="props.action"
       >
         <span :class="item.icon" />
-        <span class="ml-2">{{ item.label }}</span>
+        <span class="ml-2 my-primary">{{ item.label }}</span>
         <span v-if="hasSubmenu" class="pi pi-fw pi-angle-down ml-2" />
       </a>
     </template>
@@ -68,7 +68,7 @@ const items = ref([
 ]);
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .p-menubar {
   position: sticky;
   top: 0;
@@ -77,7 +77,7 @@ const items = ref([
 }
 
 .p-menubar-item-link {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.0933em;
   text-transform: uppercase;

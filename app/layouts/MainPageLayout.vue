@@ -1,7 +1,7 @@
 <template>
   <div>
     <OwnMenuBar />
-    <SmallHero />
+    <BigHero />
     <slot />
     <!-- <DividerWave /> -->
     <FooterGeneral />

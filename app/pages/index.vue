@@ -30,6 +30,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: 'main-page-layout'
+});
+
 import GeneralDescription from '@/components/homepage/GeneralDescription.vue';
 </script>
 
