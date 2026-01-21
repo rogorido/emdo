@@ -30,13 +30,11 @@ onMounted(async () => {
   mymap = L.map('mapid').setView([42.5145, -83.0147], 7);
 
   // https://docs.stadiamaps.com/map-styles/alidade-smooth/
-  L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png',
-    {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }
-  ).addTo(mymap);
+  // https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png'
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(mymap);
 
   const { data, status, error } = await useFetch(`${api}/houses/houses/`);
 
