@@ -1,7 +1,7 @@
 <template>
   <footer>
     <!-- <div class="row justify-evenly q-pb-md"> -->
-    <div class="grid">
+    <div class="flex justify-content-evenly">
       <div class="footer-col">
         <p>
           This site is part of my site <br /><a
@@ -24,11 +24,11 @@
           <router-link to="/contact"> Igor Sosa Mayor</router-link>
         </p>
       </div>
-      <!-- <div class="footer-col">
-        <SocialLinks />
-      </div> -->
+      <div class="footer-col">
+        <LayoutSocialLinks />
+      </div>
     </div>
-    <div class="row justify-evenly">
+    <div class="flex justify-content-evenly">
       <div class="footer-col">
         <p>Copyright 2019-{{ new Date().getFullYear() }}</p>
       </div>
@@ -38,7 +38,7 @@
           target="_blank"
           rel="noopener noreferrer"
           >API version</a
-        >: 12
+        >: 0.9.12
       </div>
       <div class="footer-col">
         <p>
@@ -47,8 +47,8 @@
             >VueJs</a
           >
           y
-          <a target="_blank" rel="noopener noreferrer" href="https://quasar.dev"
-            >Quasar</a
+          <a target="_blank" rel="noopener noreferrer" href="https://nuxt.com"
+            >NuxtJS</a
           >.
         </p>
       </div>

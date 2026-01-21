@@ -30,34 +30,7 @@
       </div>
 
       <div
-        class="grid oferta cursor-pointer"
-        @click="goToSite('/analysis/bishops/')"
-      >
-        <div class="col imageshown">
-          <img
-            src="@/assets/images/bishops.webp"
-            alt="bishops"
-            height="400px"
-            style="border-radius: 10% 30% 50% 70%"
-          />
-        </div>
-        <div class="col descriptionshown">
-          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
-            Bishops
-          </h3>
-          <p>
-            Durante la Edad Moderna los miembros de la Orden de Predicadores
-            estuvieron presentes a lo largo de todo el globo en calidad de
-            obispos. Su papel en la construcción de una Iglesia ordinaria
-            postridentina y sobre todo en espacios como el americano fue
-            central. Explore por medio de nuestra interfaz su distribución en
-            las diferentes diócesis.
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="grid oferta cursor-pointer"
+        class="grid oferta cursor-pointer mt-3 md:mt-5"
         @click="goToSite('/analysis/chapters/')"
       >
         <div class="col imageshown">
@@ -84,12 +57,12 @@
       </div>
 
       <div
-        class="grid oferta cursor-pointer"
+        class="grid oferta cursor-pointer mt-3 md:mt-5"
         @click="goToSite('/analysis/chaptersresolutions')"
       >
         <div class="col imageshown">
           <img
-            src="@/assets/images/cagayan.webp"
+            src="@/assets/images/acta4-r.avif"
             alt="resolutions"
             height="400px"
             style="border-radius: 10% 30% 50% 70%"
@@ -110,7 +83,7 @@
       </div>
 
       <div
-        class="grid oferta cursor-pointer"
+        class="grid oferta cursor-pointer mt-3 md:mt-5"
         @click="goToSite('/analysis/works/')"
       >
         <div class="col imageshown">
@@ -130,6 +103,33 @@
             medio de una interfaz rica en filtros y visualizaciones podemos
             analizar cuestiones diversas sobre la producción escrita de los
             dominicos.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="grid oferta cursor-pointer mt-3 md:mt-5"
+        @click="goToSite('/analysis/bishops/')"
+      >
+        <div class="col imageshown">
+          <img
+            src="@/assets/images/bishops.webp"
+            alt="bishops"
+            height="400px"
+            style="border-radius: 10% 30% 50% 70%"
+          />
+        </div>
+        <div class="col descriptionshown">
+          <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">
+            Bishops
+          </h3>
+          <p>
+            Durante la Edad Moderna los miembros de la Orden de Predicadores
+            estuvieron presentes a lo largo de todo el globo en calidad de
+            obispos. Su papel en la construcción de una Iglesia ordinaria
+            postridentina y sobre todo en espacios como el americano fue
+            central. Explore por medio de nuestra interfaz su distribución en
+            las diferentes diócesis.
           </p>
         </div>
       </div>
