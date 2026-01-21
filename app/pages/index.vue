@@ -24,7 +24,7 @@
       </p>
     </div>
 
-    <GeneralDescription />
+    <homepageGeneralDescription />
     <ScrollTop target="window" :threshold="100" icon="pi pi-arrow-up" />
   </div>
 </template>

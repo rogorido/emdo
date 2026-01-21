@@ -1,28 +1,14 @@
 <template>
   <div>
-    <h2 class="text-center">Works</h2>
+    <h2 class="text-center">Works' Database</h2>
+
+    <p>
+      La producción de los miembros la Orden de Predicadores producirán durante
+      la Edad Moderna una cantidad ingente de obras tanto publicadas como en
+      manuscrito. Las presente base de datos constituye la mayor recopilación de
+      datos sobre esa producción.
+    </p>
+
+    <WorksMainStats />
   </div>
 </template>
-
-<script>
-definePageMeta({
-  layout: 'houses-layout'
-});
-</script>
-
-<style lang="scss" scoped>
-.text-caption {
-  font-size: 1rem;
-}
-
-.description {
-  opacity: 0.6;
-}
-
-.separador {
-  margin: 30px 0;
-  background-image: url('../assets/svg/pattern_05.svg');
-  height: 150px;
-  width: 100%;
-}
-</style>
