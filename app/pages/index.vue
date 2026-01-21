@@ -33,8 +33,6 @@
 definePageMeta({
   layout: 'main-page-layout'
 });
-
-import GeneralDescription from '@/components/homepage/GeneralDescription.vue';
 </script>
 
 <style lang="scss" scoped>
