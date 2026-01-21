@@ -61,19 +61,7 @@
     </div>
 
     <!--Links-->
-    <div class="grid oferta cursor-pointer" @click="goToSite('/links')">
-      <div class="col-12 md:col-6 imageshown">
-        <img
-          src="@/assets/svg/pattern_04.svg"
-          alt="houses"
-          style="border-radius: 10% 30% 50% 70%"
-        />
-      </div>
-      <div class="col-12 md:col-6 descriptionshown">
-        <h3>Links</h3>
-        <p>añadir</p>
-      </div>
-    </div>
+    <!--     TODO: añadir links! -->
   </section>
 </template>
 

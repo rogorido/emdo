@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   css: [
     'primeicons/primeicons.css',
     'primeflex/primeflex.css',
-    // '@/assets/normalize.css',
+    '@/assets/normalize.css',
     '@/assets/owncss.scss',
     '@/assets/owncontainers.css'
   ]

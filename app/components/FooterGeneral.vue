@@ -80,7 +80,7 @@ a {
 }
 
 @media (max-width: 800px) {
-  .row {
+  .flex {
     flex-direction: column;
     align-items: center;
   }

@@ -50,11 +50,7 @@ const items = ref([
     icon: 'pi pi-map',
     route: '/sections'
   },
-  {
-    label: 'Links',
-    icon: 'pi pi-map',
-    route: '/links'
-  },
+
   {
     label: 'About',
     icon: 'pi pi-users',
