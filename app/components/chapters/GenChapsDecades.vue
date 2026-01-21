@@ -1,53 +1,24 @@
 <template>
-  <Bar :data="chartData" />
+  <Chart type="bar" :data="chartData" />
 </template>
 
-<script>
-import { Bar } from 'vue-chartjs';
-import { ref } from 'vue';
-import { api } from 'boot/axios';
-import { useQuasar } from 'quasar';
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale
-} from 'chart.js';
+<script setup>
+import Chart from 'primevue/chart';
+import { createChaptersDecadesData } from '@/utils/createDataChart';
 
-ChartJS.register(
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale
+const config = useRuntimeConfig();
+const api = config.public.apiBaseUrl;
+
+const chartData = ref();
+
+const { data, status, error } = await useFetch(
+  `${api}/chapters/capgensperdecade/`
 );
-import { createChaptersDecadesData } from '../../utils/createDataChart';
 
-export default {
-  name: 'GenChapsDecades',
-  components: { Bar },
-
-  async setup() {
-    const chartData = ref([]);
-    const $q = useQuasar();
-
-    try {
-      const decades = await api.get('/chapters/capgensperdecade/');
-      chartData.value = createChaptersDecadesData(decades.data);
-    } catch (err) {
-      console.log(err);
-      $q.notify({
-        message: 'An error has occurred. Load the page again!'
-      });
-    }
-
-    return {
-      chartData
-    };
-  }
-};
+if (data) {
+  chartData.value = createChaptersDecadesData(data.value);
+  console.log(chartData.value);
+} else {
+  console.log(error);
+}
 </script>

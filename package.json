@@ -1,6 +1,6 @@
 {
   "name": "webpreachers",
-  "version": "0.2.47",
+  "version": "0.2.48",
   "description": "A web about the Preachers Order in early modern times",
   "productName": "WebPreachers",
   "author": "Igor Sosa Mayor <joseleopoldo1792@gmail.com>",
@@ -21,7 +21,7 @@
     "@primeuix/themes": "^2.0.2",
     "@quasar/extras": "^1.16.8",
     "axios": "^1.6.2",
-    "chart.js": "^4.4.0",
+    "chart.js": "^4.5.1",
     "chroma-js": "^3.2.0",
     "leaflet": "^1.9.4",
     "leaflet.markercluster": "^1.5.3",

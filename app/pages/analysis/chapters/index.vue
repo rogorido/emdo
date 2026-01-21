@@ -13,14 +13,8 @@
       El siguiente gráfico nos muestra la frecuencia de celebraciones por
       década:
     </p>
-    <Suspense>
-      <template #default>
-        <GenChapsDecades />
-      </template>
-      <template #fallback>
-        <div>Loading...</div>
-      </template>
-    </Suspense>
+
+    <ChaptersGenChapsDecades />
 
     <h2>Distribución geográfica</h2>
     <p>
@@ -50,6 +44,6 @@
       La representación cartográfica de esta distribución se puede ver en el
       siguiente mapa:
     </p>
-    <GenChapsPlacesMap />
+    <ChaptersGenChapsPlacesMap />
   </div>
 </template>

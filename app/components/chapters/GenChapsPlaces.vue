@@ -24,8 +24,6 @@ import { FilterMatchMode } from '@primevue/core/api';
 
 const houses = ref();
 
-// NOTE: no veo diferencia usando uselazyfetch... por qué?
-// const { data, status, error } = await useFetch(`${api}/groups`, {
 const { data, status, error } = await useFetch(
   `${api}/chapters/capgensperplaces/`
 );
@@ -33,7 +31,6 @@ const { data, status, error } = await useFetch(
 /* console.log(data); */
 if (data) {
   houses.value = data.value;
-  console.log('esto es el asunto', houses.value);
 }
 
 // I dont really understand how this works...
