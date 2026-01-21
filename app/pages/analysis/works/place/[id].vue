@@ -77,6 +77,9 @@
 </template>
 
 <script setup>
+definePageMeta({
+  layout: 'works-layout'
+});
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
