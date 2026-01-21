@@ -3,7 +3,7 @@
     <h2 class="text-center">Explore our page</h2>
 
     <div class="grid oferta" @click="goToSite('/sections')">
-      <div class="col-12 md:col-6 imageshown">
+      <div class="col-12 md:col-6 imageshown cursor-pointer">
         <img
           src="@/assets/svg/pattern_03.svg"
           alt="houses"
@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="grid oferta" @click="goToSite('/bibliography')">
+    <div class="grid oferta cursor-pointer" @click="goToSite('/bibliography')">
       <div class="col-12 md:col-6 imageshown">
         <img
           src="@/assets/svg/pattern_04.svg"
@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="grid oferta" @click="goToSite('/getdata')">
+    <div class="grid oferta cursor-pointer" @click="goToSite('/getdata')">
       <div class="col-12 md:col-6 imageshown">
         <img
           src="@/assets/svg/pattern_05.svg"
@@ -48,7 +48,7 @@
           style="border-radius: 10% 30% 50% 70%"
         />
       </div>
-      <div class="col-12 md:col-6 descriptionshown">
+      <div class="col-12 md:col-6 descriptionshown cursor-pointer">
         <h3>Get Data & Code</h3>
         <p>
           This webpage offers not only analysis which can be viewed and
@@ -61,7 +61,7 @@
     </div>
 
     <!--Links-->
-    <div class="grid oferta" @click="goToSite('/links')">
+    <div class="grid oferta cursor-pointer" @click="goToSite('/links')">
       <div class="col-12 md:col-6 imageshown">
         <img
           src="@/assets/svg/pattern_04.svg"
