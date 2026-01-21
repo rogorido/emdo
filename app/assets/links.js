@@ -52,7 +52,7 @@ export const workslinks = [
   }
 ];
 
-export const houseslinks = [
+const houseslinks = [
   {
     title: 'Houses',
     caption: 'Where were the  Dominican houses?',
@@ -97,3 +97,8 @@ export const chapterslinks = [
     link: '/chapters/info'
   }
 ];
+
+export const allLinks = {
+  houses: houseslinks,
+  works: workslinks
+};

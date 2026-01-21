@@ -4,7 +4,7 @@
     <SmallHero />
     <div class="grid">
       <div class="col-3">
-        <LayoutLeftColumnDatabase />
+        <LayoutLeftColumnData typeOfColumn="houses" />
       </div>
       <div class="col-6 central">
         <slot />

@@ -7,7 +7,7 @@
       <Card
         class="cursor-pointer mb-2"
         @click="goToSite(item.link)"
-        v-for="item in houseslinks"
+        v-for="item in sidebarLinks"
       >
         <template #title>{{ item.title }}</template>
         <template #content>
@@ -19,7 +19,13 @@
 </template>
 
 <script setup>
-import { houseslinks } from '@/assets/links';
+const props = defineProps({ typeOfColumn: { type: String, required: true } });
+import { allLinks } from '@/assets/links';
+
+// we create the links for the sidebar or return []
+const sidebarLinks = computed(() => {
+  return allLinks[props.typeOfColumn] ?? [];
+});
 
 const goToSite = (site) => {
   return navigateTo({ path: site });
