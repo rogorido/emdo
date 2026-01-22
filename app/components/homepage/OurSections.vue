@@ -20,11 +20,11 @@
             Houses
           </h3>
           <p>
-            La Orden de Predicadores llegará a tener unas 1200 casas repartidas
-            a lo largo y ancho del globo. Su presencia global será una de sus
-            características más relevantes. Pero su distribución fue muy
-            desigual. Nuestra cartografía es un intento de representar esa
-            presencia global.
+            The Order of Preachers had c.1750 about 1,200 houses spread across
+            the globe. Its global presence will be one of its most notable
+            characteristics. However, its distribution was very uneven. Our
+            cartography is an attempt to represent the global presence of the
+            Dominican Friars.
           </p>
         </div>
       </div>
@@ -46,12 +46,13 @@
             Chapters
           </h3>
           <p>
-            La Orden de Predicadores cuenta con una compleja organización
-            territorial en la que cada unidad (convento, provincia, orden
-            entera) tiene mecanismos de gobierno muy refinados. Uno de ellos son
-            los capítulos. En esta página se pueden explorar las frecuencias,
-            lugares y participación de las provincias en los capítulos generales
-            de la Orden.
+            The Order of Preachers has a complex territorial organization in
+            which each unit (convent, province, entire order) has very refined
+            governing mechanisms. One of these mechanisms are the socalled
+            chapters, the meetings at the different levels. On this page you can
+            explore the Order's general chapters: their frequencies, their
+            locations, and the participation of different Dominican provinces at
+            the meetings, etc.
           </p>
         </div>
       </div>
@@ -73,11 +74,12 @@
             Resolutions
           </h3>
           <p>
-            ¿Qué decidían los dominicos en sus capítulos generales? ¿Qué temas
-            eran los más frecuentados? ¿Hubo diferencias temporales a lo largo
-            de la Edad Moderna? Por medio de nuestra base de datos es posible
-            analizar todos estos aspectos desde diversas perspectivas para los
-            capítulos generales de la Edad Moderna.
+            What decisions did the Dominicans reach in their general chapters?
+            Which subjects were most frequently addressed? Were there temporal
+            variations throughout the Early Modern period? By means of our
+            database, it is possible to analyze all of these aspects from
+            multiple perspectives concerning the general chapters of the Early
+            Modern period.
           </p>
         </div>
       </div>
@@ -97,12 +99,12 @@
         <div class="col descriptionshown">
           <h3 class="mt-0 mb-3 text-center text-uppercase my-primary">Works</h3>
           <p>
-            La producción intelectual de los dominicos fue en la Edad Moderna
-            ingente y muy variada. Escribieron sobre los temas más variados, en
-            los formatos más variados y para los públicos más diferentes. Por
-            medio de una interfaz rica en filtros y visualizaciones podemos
-            analizar cuestiones diversas sobre la producción escrita de los
-            dominicos.
+            The intellectual production of the Dominicans in the Early modern
+            period was immense and highly diverse. They wrote on a wide array of
+            subjects, employing various formats and addressing different
+            audiences. Through a richly filtered interface with visualizations,
+            we can analyze diverse issues concerning the Dominican written
+            output.
           </p>
         </div>
       </div>
@@ -124,12 +126,11 @@
             Bishops
           </h3>
           <p>
-            Durante la Edad Moderna los miembros de la Orden de Predicadores
-            estuvieron presentes a lo largo de todo el globo en calidad de
-            obispos. Su papel en la construcción de una Iglesia ordinaria
-            postridentina y sobre todo en espacios como el americano fue
-            central. Explore por medio de nuestra interfaz su distribución en
-            las diferentes diócesis.
+            During the Modern Age, members of the Order of Preachers were
+            present throughout the globe as bishops. Their role in the
+            construction of a post-Tridentine ordinary Church, especially in
+            places like the Americas, was central. Explore their distribution
+            across the different dioceses through our interface.
           </p>
         </div>
       </div>
