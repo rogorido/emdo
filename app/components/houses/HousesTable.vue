@@ -1,8 +1,6 @@
 <template>
   <div class="p-container">
-    <p>Esto es una prueba. Aquí va lo principal.</p>
-
-    <h3>Positions: general</h3>
+    <h2>Dominican Houses</h2>
     <DataTable
       :value="houses"
       paginator
