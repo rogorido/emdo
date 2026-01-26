@@ -36,14 +36,13 @@ export default defineNuxtConfig({
     '@/assets/normalize.css',
     '@/assets/owncss.scss',
     '@/assets/owncontainers.css'
-  ]
+  ],
 
-  // it does not work yet...
-  // https://www.answeroverflow.com/m/1359934022888980520
-  // routeRules: {
-  //   // Set layout for specific route
-  //   //'/admin': { appLayout: 'admin' },
-  //   // Set layout for multiple routes
-  //   '/analysis/**': { appLayout: 'houses-layout' }
-  // }
+  routeRules: {
+    // Set layout for specific route
+    //'/admin': { appLayout: 'admin' },
+    // Set layout for multiple routes
+    '/analysis/houses/**': { appLayout: 'houses-layout' },
+    '/analysis/works/**': { appLayout: 'works-layout' }
+  }
 });
